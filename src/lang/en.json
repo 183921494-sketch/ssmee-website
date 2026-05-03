@@ -1,0 +1,252 @@
+{
+  "brand": {
+    "name": "Ssmee",
+    "nameEn": "Ssmee",
+    "tagline": "Premium Tissue OEM/ODM Manufacturer"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "certification": "Certifications",
+    "contact": "Contact",
+    "cooperation": "Cooperate"
+  },
+  "lang": {
+    "zh": "中文",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "hero": {
+    "title": "Premium Tissue OEM/ODM Manufacturer",
+    "subtitle": "20 Years of Excellence | Export Worldwide | Focus on Facial Tissue & Bottom-Drawer Series",
+    "cta": "Get Quote",
+    "secondary": "Learn More"
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Premium Quality, Global Export",
+    "tissue": {
+      "name": "Facial Tissue Series",
+      "spec": "10 packs/bundle | 5-Ply | Virgin Pulp",
+      "desc": "5-ply thickened structure, wet-strength, soft and delicate touch. Ideal for home, restaurant, hotel use."
+    },
+    "bottomDrawer": {
+      "name": "Bottom-Drawer Series",
+      "spec": "400 sheets/bundle | 2000 sheets total | 5-Ply",
+      "desc": "Easy-pull bottom design, 5-ply reinforced, strong and tear-resistant. Perfect for home, office, public spaces."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "20 Years of Dedication to Premium Tissue",
+    "story": "Founded in 2006 in Guangdong Province, Ssmee is a professional tissue R&D, production and sales brand enterprise.",
+    "factory": {
+      "title": "Smart Factory",
+      "desc": "Multiple fully automated production lines with annual capacity exceeding 5,000 tons."
+    },
+    "quality": {
+      "title": "Quality Assurance",
+      "desc": "ISO9001 certified. Products meet international export standards."
+    },
+    "export": {
+      "title": "Global Export",
+      "desc": "Products exported to Southeast Asia, Russia, Middle East and other countries and regions."
+    }
+  },
+  "certification": {
+    "title": "Certifications",
+    "subtitle": "Authoritative Certification, Quality Guaranteed",
+    "items": ["ISO9001 Quality Management", "ISO14001 Environmental Management", "Sanitation License", "Third-Party Test Report"]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Looking forward to building long-term partnerships with you",
+    "form": {
+      "name": "Your Name",
+      "company": "Company Name",
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "message": "Inquiry Details",
+      "submit": "Submit Inquiry",
+      "success": "Submitted successfully! We will reply within 24 hours.",
+      "error": "Submission failed. Please try again later."
+    },
+    "info": {
+      "phone": "Phone",
+      "wechat": "WeChat",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "cooperation": {
+    "title": "Cooperation",
+    "subtitle": "Partner with Ssmee, Create Future Together",
+    "models": ["Regional Agency", "Wholesale Distribution", "OEM/ODM", "Corporate Procurement"],
+    "advantages": ["20-Year Brand Heritage", "Factory Direct, Best Price", "Stable Quality, Sufficient Supply", "Full Marketing Support"],
+    "contact": "Contact Us for Partnership Details"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "20 Years of Dedication to Premium Tissue",
+    "overview": {
+      "title": "Company Overview",
+      "desc1": "Founded in 2006 in Guangdong Province, Ssmee is a professional tissue R&D, production and sales enterprise with modern production facilities and multiple automated lines.",
+      "desc2": "We are committed to quality-first and customer-centric philosophy. Our products are exported to Southeast Asia, Russia, Middle East and other regions."
+    },
+    "stats": {
+      "years": "Years Experience",
+      "employees": "Employees",
+      "factory": "Production Area",
+      "countries": "Export Countries"
+    },
+    "history": {
+      "title": "Our Journey",
+      "h1": { "title": "Brand Founded", "desc": "Ssmee brand established, tissue production began" },
+      "h2": { "title": "Scale Expansion", "desc": "New modern factory built, capacity increased 300%" },
+      "h3": { "title": "Going Global", "desc": "Products exported to Southeast Asia, Russia markets" },
+      "h4": { "title": "Brand Upgrade", "desc": "Full brand upgrade, premium product series launched" }
+    },
+    "values": {
+      "title": "Core Values",
+      "v1": { "title": "Quality First", "desc": "Strict control at every process" },
+      "v2": { "title": "Innovation Driven", "desc": "Continuous R&D for new products" },
+      "v3": { "title": "Customer Focus", "desc": "Deep understanding of needs" },
+      "v4": { "title": "Integrity & Win-Win", "desc": "Honest business, mutual success" }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "desc": "Multiple international certifications",
+      "viewAll": "View All Certifications"
+    }
+  },
+  "cert": {
+    "title": "Certifications",
+    "subtitle": "Authoritative Certification, Quality Guaranteed",
+    "quality": {
+      "title": "Quality System Certification",
+      "iso9001": { "name": "ISO 9001", "desc": "Quality Management System" },
+      "iso14001": { "name": "ISO 14001", "desc": "Environmental Management System" },
+      "iso45001": { "name": "ISO 45001", "desc": "Occupational Health & Safety" }
+    },
+    "product": {
+      "title": "Product Certification",
+      "ce": { "name": "CE Marking", "desc": "EU Market Access" },
+      "fda": { "name": "FDA Approved", "desc": "US Food & Drug Safety" },
+      "sc": { "name": "SC License", "desc": "Food-Related Product Permit" }
+    },
+    "export": {
+      "title": "Export Qualifications",
+      "item1": "Import & Export Rights",
+      "item2": "Certificate of Origin",
+      "item3": "CIQ Registration",
+      "item4": "Customs AEO Certified"
+    },
+    "factory": {
+      "title": "Factory Strength",
+      "desc": "Modern smart factory, 5000+ tons annual capacity",
+      "f1": "Automated High-Speed Lines",
+      "f2": "Clean Room Production",
+      "f3": "Smart Warehousing",
+      "f4": "Eco Wastewater Treatment"
+    },
+    "qc": {
+      "title": "Quality Control Process",
+      "s1": { "title": "Raw Material Inspection", "desc": "100% virgin pulp testing" },
+      "s2": { "title": "Process Control", "desc": "SPC statistical control" },
+      "s3": { "title": "Product Testing", "desc": "Full physical property tests" },
+      "s4": { "title": "Shipment Inspection", "desc": "Batch sampling & release" }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Looking forward to building long-term partnerships",
+    "info": {
+      "title": "Contact Information",
+      "address": { "label": "Address", "value": "XX Road, XX Town, Dongguan, Guangdong, China" },
+      "phone": { "label": "Phone" },
+      "email": { "label": "Email" },
+      "hours": { "label": "Business Hours", "value": "Mon-Sat 08:00-18:00" }
+    },
+    "form": {
+      "title": "Send Inquiry",
+      "company": "Company Name",
+      "name": "Contact Person",
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "country": "Country / Region",
+      "selectCountry": "Select...",
+      "other": "Other Country",
+      "product": "Interested Products",
+      "selectProduct": "Select...",
+      "tissue": "Facial Tissue Series",
+      "bottom": "Bottom-Drawer Series",
+      "both": "Both Interested",
+      "quantity": "Estimated Quantity",
+      "quantityPlaceholder": "e.g., 1000 bundles/month",
+      "message": "Detailed Requirements",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting...",
+      "success": "Submitted! We will reply within 24 hours."
+    },
+    "map": {
+      "title": "Factory Location",
+      "placeholder": "Map loading..."
+    }
+  },
+  "coop": {
+    "title": "Cooperation",
+    "subtitle": "Partner with Ssmee, Create Future Together",
+    "advantages": {
+      "title": "Partnership Advantages",
+      "a1": { "title": "Factory Direct", "desc": "Own factory, first-hand source, best price" },
+      "a2": { "title": "Quality Guaranteed", "desc": "ISO certified, export quality, <1% return rate" },
+      "a3": { "title": "Profit Margin", "desc": "Factory price, sufficient profit space" },
+      "a4": { "title": "Export Experience", "desc": "20 years export experience for global markets" }
+    },
+    "models": {
+      "title": "Cooperation Models",
+      "m1": {
+        "title": "Regional Agency",
+        "desc": "Exclusive regional rights with territory protection",
+        "features": ["Exclusive Rights", "Territory Protection", "Marketing Support Fund"]
+      },
+      "m2": {
+        "title": "Wholesale Distribution",
+        "desc": "Volume discount for channel partners",
+        "features": ["Tiered Pricing", "Credit Terms", "Promo Materials"]
+      },
+      "m3": {
+        "title": "OEM/ODM",
+        "desc": "Private label customization service",
+        "features": ["Brand Customization", "Package Design", "Small MOQ Trial"]
+      }
+    },
+    "support": {
+      "title": "Partner Support",
+      "s1": "Product Training",
+      "s2": "Market Analysis",
+      "s3": "Marketing Materials",
+      "s4": "Logistics Service",
+      "s5": "After-Sales Support",
+      "s6": "Sales Rebate Policy"
+    },
+    "process": {
+      "title": "Cooperation Process",
+      "p1": { "title": "Inquiry", "desc": "Call/Email for partnership info" },
+      "p2": { "title": "Factory Visit", "desc": "Schedule factory tour" },
+      "p3": { "title": "Sign Contract", "desc": "Confirm model and sign agreement" },
+      "p4": { "title": "Start Cooperation", "desc": "First order and begin partnership" }
+    },
+    "cta": {
+      "title": "Start Partnership Today",
+      "desc": "Call or message, we reply within 24 hours",
+      "contact": "Send Message",
+      "call": "Call Now"
+    }
+  },
+  "footer": {
+    "rights": "© 2026 Ssmee. All rights reserved.",
+    "techSupport": "Tech Support: Xianle Tech www.soonyet.cn"
+  }
+}
