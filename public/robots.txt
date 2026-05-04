@@ -1,0 +1,41 @@
+# 时时美纸巾官网 - robots.txt
+# https://www.ssmee.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ssmee.com/sitemap.xml
+Sitemap: https://www.ssmee.com/sitemap-zh.xml
+Sitemap: https://www.ssmee.com/sitemap-en.xml
+Sitemap: https://www.ssmee.com/sitemap-ru.xml
+
+# 禁止爬取的路径
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# 百度蜘蛛
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Yandex（俄罗斯）
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# 搜狗
+User-agent: Sogou
+Allow: /
+Crawl-delay: 1
+
+# 360搜索
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 1

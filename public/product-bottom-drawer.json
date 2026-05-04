@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "时时美奔跑系列悬挂式抽纸",
+  "image": [
+    "https://www.ssmee.com/images/bottom-drawer.jpg",
+    "https://www.ssmee.com/images/bottom-detail1.jpg"
+  ],
+  "description": "时时美奔跑系列悬挂式抽纸，400抽/提，155×175mm，5层压花工艺，无荧光剂、无香精、无添加、可湿水，采用优质原生木浆",
+  "brand": {
+    "@type": "Brand",
+    "name": "时时美 Ssmee"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "时时美纸业"
+  },
+  "material": "原生木浆",
+  "category": "生活用纸",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "CNY",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "时时美纸业"
+    }
+  }
+}
