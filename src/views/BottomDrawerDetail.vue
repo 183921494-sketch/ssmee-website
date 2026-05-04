@@ -27,7 +27,7 @@
           <h2>{{ t('products.bottomDrawer.name') }}</h2>
           <p class="price-label">面议 / FOB报价</p>
           <div class="attrs">
-            <div class="attr"><span class="key">规格</span><span class="val">400抽/提 | 1箱10提 | 5层 | 155×180mm</span></div>
+            <div class="attr"><span class="key">规格</span><span class="val">400抽/提 | 1箱10提 | 5层 | 155×175mm</span></div>
             <div class="attr"><span class="key">工艺</span><span class="val">压花工艺</span></div>
             <div class="attr"><span class="key">材质</span><span class="val">100% 原生木浆</span></div>
             <div class="attr"><span class="key">特点</span><span class="val">无荧光剂 | 无香精 | 无添加 | 可湿水</span></div>
@@ -40,7 +40,7 @@
           </div>
           <router-link to="/contact" class="btn btn-primary full-width">立即询价</router-link>
           <div class="trust-badges">
-            <span>✅ ISO9001认证</span>
+            <span>✅ 食品安全许可</span>
             <span>✅ FDA合规</span>
             <span>✅ 免费样品</span>
           </div>
@@ -52,7 +52,7 @@
         <table>
           <tbody>
             <tr><td>产品名称</td><td>时时美奔跑系列 — 悬挂式抽纸 / Ssmee Running Series Bottom-Drawer Tissue</td></tr>
-            <tr><td>规格</td><td>155×180mm | 5层 | 压花工艺</td></tr>
+            <tr><td>规格</td><td>155×175mm | 5层 | 压花工艺</td></tr>
             <tr><td>包装</td><td>400抽/提 | 1箱10提</td></tr>
             <tr><td>材质</td><td>100% 原生木浆，无再生浆</td></tr>
             <tr><td>工艺</td><td>压花工艺</td></tr>

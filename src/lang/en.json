@@ -24,11 +24,11 @@
     "tissue": {
       "name": "Ssmee Running Series — Facial Tissue",
       "spec": "10 packs/bundle | 10 bundles/carton | 5-Ply | 155×180mm",
-      "desc": "5-ply thickened structure, wet-strength, soft and delicate. Embossed process, no荧光剂, no fragrance, no additives, water-washable. Perfect for home, restaurant, hotel."
+      "desc": "5-ply thickened structure, wet-strength, soft and delicate. Embossed process, no fluorescent agent, no fragrance, no additives, water-washable. Perfect for home, restaurant, hotel."
     },
     "bottomDrawer": {
       "name": "Ssmee Running Series — Bottom-Drawer Tissue",
-      "spec": "400 sheets/bundle | 10 bundles/carton | 5-Ply | 155×180mm",
+      "spec": "400 sheets/bundle | 10 bundles/carton | 5-Ply | 155×175mm",
       "desc": "Easy-pull bottom design, 5-ply reinforced, strong and tear-resistant. Embossed process, no fluorescent agent, no fragrance, no additives, water-washable. Perfect for home, office, public spaces."
     }
   },
@@ -106,71 +106,19 @@
   "cert": {
     "title": "Certifications",
     "subtitle": "Authoritative Certification, Quality Guaranteed",
-    "quality": {
-      "title": "Quality System Certification",
-      "iso9001": {
-        "name": "ISO 9001",
-        "desc": "Quality Management System"
-      },
-      "iso14001": {
-        "name": "ISO 14001",
-        "desc": "Environmental Management System"
-      },
-      "iso45001": {
-        "name": "ISO 45001",
-        "desc": "Occupational Health & Safety"
-      }
+    "foodSafety": {
+      "title": "Food Safety License",
+      "desc": "Holding complete food-related product production license, meeting national food safety standards."
     },
-    "product": {
-      "title": "Product Certification",
-      "ce": {
-        "name": "CE Marking",
-        "desc": "EU Market Access"
-      },
-      "fda": {
-        "name": "FDA Approved",
-        "desc": "US Food & Drug Safety"
-      },
-      "sc": {
-        "name": "SC License",
-        "desc": "Food-Related Product Permit"
-      }
-    },
-    "export": {
-      "title": "Export Qualifications",
-      "item1": "Import & Export Rights",
-      "item2": "Certificate of Origin",
-      "item3": "CIQ Registration",
-      "item4": "Customs AEO Certified"
+    "reports": {
+      "title": "Test Reports",
+      "desc": "Products certified by third-party authoritative testing agencies. Download to view detailed test reports.",
+      "download": "Download PDF"
     },
     "factory": {
-      "title": "Factory Strength",
-      "desc": "Modern smart factory, 5000+ tons annual capacity",
-      "f1": "Automated High-Speed Lines",
-      "f2": "Clean Room Production",
-      "f3": "Smart Warehousing",
-      "f4": "Eco Wastewater Treatment"
-    },
-    "qc": {
-      "title": "Quality Control Process",
-      "s1": {
-        "title": "Raw Material Inspection",
-        "desc": "100% virgin pulp testing"
-      },
-      "s2": {
-        "title": "Process Control",
-        "desc": "SPC statistical control"
-      },
-      "s3": {
-        "title": "Product Testing",
-        "desc": "Full physical property tests"
-      },
-      "s4": {
-        "title": "Shipment Inspection",
-        "desc": "Batch sampling & release"
-      }
-    },
-    "downloadReports": "Download Test Reports"
+      "title": "Factory Photos",
+      "desc": "Modern production base, standardized production process."
+    }
   },
   "contact": {
     "title": "Contact Us",
@@ -182,16 +130,20 @@
         "value": "Room 201, Beiwang Road (Zhongtang Section), Zhongtang Town, Dongguan City, Guangdong Province, China"
       },
       "phone": {
-        "label": "Phone"
+        "label": "Phone",
+        "value": "+86 153-7773-1411"
       },
       "email": {
-        "label": "Email"
+        "label": "Email",
+        "value": "183921494@qq.com"
       },
       "wechat": {
-        "label": "WeChat"
+        "label": "WeChat",
+        "value": "soonyetclub"
       },
       "manager": {
-        "label": "Manager"
+        "label": "Manager",
+        "value": "Mr. Zhang"
       },
       "hours": {
         "label": "Business Hours",
@@ -289,19 +241,19 @@
       "title": "Cooperation Process",
       "p1": {
         "title": "Inquiry",
-        "desc": "Call/Email for partnership info"
+        "desc": "Understand customer needs, customize product plan"
       },
       "p2": {
-        "title": "Factory Visit",
-        "desc": "Schedule factory tour"
+        "title": "Sample Confirmation",
+        "desc": "Provide free samples, confirm quality together"
       },
       "p3": {
         "title": "Sign Contract",
-        "desc": "Confirm model and sign agreement"
+        "desc": "Confirm price and lead time, sign formal contract"
       },
       "p4": {
-        "title": "Start Cooperation",
-        "desc": "First order and begin partnership"
+        "title": "Production & Delivery",
+        "desc": "On-time production, on-time delivery, full QC process"
       }
     },
     "cta": {
@@ -324,22 +276,34 @@
       "moq": "500 bundles",
       "leadtime": "7-15 days",
       "payment": "T/T, L/C, Western Union"
+    },
+    "bottomSpecs": {
+      "size": "155×175mm",
+      "ply": "5-Ply",
+      "process": "Embossed Process",
+      "features": "No Fluorescent Agent | No Fragrance | No Additives | Water-Washable",
+      "moq": "500 cartons",
+      "leadtime": "7-15 days",
+      "payment": "T/T, L/C, Western Union"
     }
   },
   "home": {
+    "hot": "Hot",
+    "popular": "Popular",
+    "factory": {
+      "title": "Factory Strength",
+      "subtitle": "Modern production base, standardized production process",
+      "items": [
+        { "label": "Years Experience" },
+        { "label": "Tons Capacity" },
+        { "label": "Export Countries" },
+        { "label": "Employees" }
+      ]
+    },
     "stats": [
-      {
-        "num": "20+",
-        "label": "Years Experience"
-      },
-      {
-        "num": "5000+",
-        "label": "Tons Capacity"
-      },
-      {
-        "num": "15+",
-        "label": "Export Countries"
-      }
+      { "num": "20+", "label": "Years Experience" },
+      { "num": "5000+", "label": "Tons Capacity" },
+      { "num": "15+", "label": "Export Countries" }
     ],
     "viewProduct": "View Details →",
     "browseAll": "Browse All Products",

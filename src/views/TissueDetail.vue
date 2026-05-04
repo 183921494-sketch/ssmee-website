@@ -48,7 +48,7 @@
           </div>
           <router-link to="/contact" class="btn btn-primary full-width">立即询价</router-link>
           <div class="trust-badges">
-            <span>✅ ISO9001认证</span>
+            <span>✅ 食品安全许可</span>
             <span>✅ FDA合规</span>
             <span>✅ 免费样品</span>
           </div>
