@@ -25,10 +25,26 @@
             </div>
             
             <div class="info-item">
+              <span class="info-icon">👤</span>
+              <div>
+                <h3>{{ $t('contact.info.manager.label') || '负责人' }}</h3>
+                <p>张经理</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
               <span class="info-icon">📞</span>
               <div>
                 <h3>{{ $t('contact.info.phone.label') }}</h3>
                 <p>+86 153-7773-1411</p>
+              </div>
+            </div>
+            
+            <div class="info-item">
+              <span class="info-icon">💬</span>
+              <div>
+                <h3>{{ $t('contact.info.wechat.label') || '微信' }}</h3>
+                <p>soonyetclub</p>
               </div>
             </div>
             

@@ -12,11 +12,6 @@
     "contact": "Contact",
     "cooperation": "Cooperate"
   },
-  "lang": {
-    "zh": "中文",
-    "en": "English",
-    "ru": "Русский"
-  },
   "hero": {
     "title": "Premium Tissue OEM/ODM Manufacturer",
     "subtitle": "20 Years of Excellence | Export Worldwide | Focus on Facial Tissue & Bottom-Drawer Series",
@@ -27,20 +22,20 @@
     "title": "Products",
     "subtitle": "Premium Quality, Global Export",
     "tissue": {
-      "name": "Facial Tissue Series",
-      "spec": "10 packs/bundle | 5-Ply | Virgin Pulp",
-      "desc": "5-ply thickened structure, wet-strength, soft and delicate touch. Ideal for home, restaurant, hotel use."
+      "name": "Ssmee Running Series — Facial Tissue",
+      "spec": "10 packs/bundle | 10 bundles/carton | 5-Ply | 155×180mm",
+      "desc": "5-ply thickened structure, wet-strength, soft and delicate. Embossed process, no荧光剂, no fragrance, no additives, water-washable. Perfect for home, restaurant, hotel."
     },
     "bottomDrawer": {
-      "name": "Bottom-Drawer Series",
-      "spec": "400 sheets/bundle | 2000 sheets total | 5-Ply",
-      "desc": "Easy-pull bottom design, 5-ply reinforced, strong and tear-resistant. Perfect for home, office, public spaces."
+      "name": "Ssmee Running Series — Bottom-Drawer Tissue",
+      "spec": "400 sheets/bundle | 10 bundles/carton | 5-Ply | 155×180mm",
+      "desc": "Easy-pull bottom design, 5-ply reinforced, strong and tear-resistant. Embossed process, no fluorescent agent, no fragrance, no additives, water-washable. Perfect for home, office, public spaces."
     }
   },
   "about": {
     "title": "About Us",
     "subtitle": "20 Years of Dedication to Premium Tissue",
-    "story": "Founded in 2006 in Guangdong Province, Ssmee is a professional tissue R&D, production and sales brand enterprise.",
+    "story": "Founded in 2006 in Dongguan, Guangdong Province, Ssmee is a professional tissue R&D, production and sales brand enterprise.",
     "factory": {
       "title": "Smart Factory",
       "desc": "Multiple fully automated production lines with annual capacity exceeding 5,000 tons."
@@ -52,47 +47,11 @@
     "export": {
       "title": "Global Export",
       "desc": "Products exported to Southeast Asia, Russia, Middle East and other countries and regions."
-    }
-  },
-  "certification": {
-    "title": "Certifications",
-    "subtitle": "Authoritative Certification, Quality Guaranteed",
-    "items": ["ISO9001 Quality Management", "ISO14001 Environmental Management", "Sanitation License", "Third-Party Test Report"]
-  },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "Looking forward to building long-term partnerships with you",
-    "form": {
-      "name": "Your Name",
-      "company": "Company Name",
-      "phone": "Phone / WhatsApp",
-      "email": "Email",
-      "message": "Inquiry Details",
-      "submit": "Submit Inquiry",
-      "success": "Submitted successfully! We will reply within 24 hours.",
-      "error": "Submission failed. Please try again later."
     },
-    "info": {
-      "phone": "Phone",
-      "wechat": "WeChat",
-      "email": "Email",
-      "address": "Address"
-    }
-  },
-  "cooperation": {
-    "title": "Cooperation",
-    "subtitle": "Partner with Ssmee, Create Future Together",
-    "models": ["Regional Agency", "Wholesale Distribution", "OEM/ODM", "Corporate Procurement"],
-    "advantages": ["20-Year Brand Heritage", "Factory Direct, Best Price", "Stable Quality, Sufficient Supply", "Full Marketing Support"],
-    "contact": "Contact Us for Partnership Details"
-  },
-  "about": {
-    "title": "About Us",
-    "subtitle": "20 Years of Dedication to Premium Tissue",
     "overview": {
       "title": "Company Overview",
-      "desc1": "Founded in 2006 in Guangdong Province, Ssmee is a professional tissue R&D, production and sales enterprise with modern production facilities and multiple automated lines.",
-      "desc2": "We are committed to quality-first and customer-centric philosophy. Our products are exported to Southeast Asia, Russia, Middle East and other regions."
+      "desc1": "Founded in 2006 in Dongguan, Guangdong Province, China. Ssmee is a professional tissue R&D, production and sales brand enterprise. With modern production base, multiple automated lines, annual capacity over 5,000 tons.",
+      "desc2": "We adhere to quality-first and customer-centric philosophy. Products are exported to Southeast Asia, Russia, Middle East and other regions, trusted by customers worldwide."
     },
     "stats": {
       "years": "Years Experience",
@@ -156,16 +115,19 @@
       "s2": { "title": "Process Control", "desc": "SPC statistical control" },
       "s3": { "title": "Product Testing", "desc": "Full physical property tests" },
       "s4": { "title": "Shipment Inspection", "desc": "Batch sampling & release" }
-    }
+    },
+    "downloadReports": "Download Test Reports"
   },
   "contact": {
     "title": "Contact Us",
     "subtitle": "Looking forward to building long-term partnerships",
     "info": {
       "title": "Contact Information",
-      "address": { "label": "Address", "value": "XX Road, XX Town, Dongguan, Guangdong, China" },
+      "address": { "label": "Address", "value": "Room 201, Beiwang Road (Zhongtang Section), Zhongtang Town, Dongguan City, Guangdong Province, China" },
       "phone": { "label": "Phone" },
       "email": { "label": "Email" },
+      "wechat": { "label": "WeChat" },
+      "manager": { "label": "Manager" },
       "hours": { "label": "Business Hours", "value": "Mon-Sat 08:00-18:00" }
     },
     "form": {
@@ -179,8 +141,8 @@
       "other": "Other Country",
       "product": "Interested Products",
       "selectProduct": "Select...",
-      "tissue": "Facial Tissue Series",
-      "bottom": "Bottom-Drawer Series",
+      "tissue": "Ssmee Running Series — Facial Tissue (10 packs/bundle)",
+      "bottom": "Ssmee Running Series — Bottom-Drawer Tissue (400 sheets/bundle)",
       "both": "Both Interested",
       "quantity": "Estimated Quantity",
       "quantityPlaceholder": "e.g., 1000 bundles/month",
@@ -247,6 +209,17 @@
   },
   "footer": {
     "rights": "© 2026 Ssmee. All rights reserved.",
-    "techSupport": "Tech Support: Xianle Tech www.soonyet.cn"
+    "techSupport": "Tech Support: "
+  },
+  "product": {
+    "specs": {
+      "size": "155×180mm",
+      "ply": "5-Ply",
+      "process": "Embossed Process",
+      "features": "No Fluorescent Agent | No Fragrance | No Additives | Water-Washable",
+      "moq": "500 bundles",
+      "leadtime": "7-15 days",
+      "payment": "T/T, L/C, Western Union"
+    }
   }
 }

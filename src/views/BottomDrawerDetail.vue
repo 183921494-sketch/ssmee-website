@@ -27,13 +27,12 @@
           <h2>{{ t('products.bottomDrawer.name') }}</h2>
           <p class="price-label">面议 / FOB报价</p>
           <div class="attrs">
-            <div class="attr"><span class="key">规格</span><span class="val">400抽/提 | 2000张 | 5层</span></div>
+            <div class="attr"><span class="key">规格</span><span class="val">400抽/提 | 1箱10提 | 5层 | 155×180mm</span></div>
+            <div class="attr"><span class="key">工艺</span><span class="val">压花工艺</span></div>
             <div class="attr"><span class="key">材质</span><span class="val">100% 原生木浆</span></div>
-            <div class="attr"><span class="key">尺寸</span><span class="val">140mm×200mm（大尺寸）</span></div>
-            <div class="attr"><span class="key">层数</span><span class="val">5层加厚加宽</span></div>
-            <div class="attr"><span class="key">包装</span><span class="val">纸箱整箱出货</span></div>
-            <div class="attr"><span class="key">MOQ</span><span class="val">300 箱</span></div>
-            <div class="attr"><span class="key">交期</span><span class="val">10-20 天</span></div>
+            <div class="attr"><span class="key">特点</span><span class="val">无荧光剂 | 无香精 | 无添加 | 可湿水</span></div>
+            <div class="attr"><span class="key">MOQ</span><span class="val">500 箱</span></div>
+            <div class="attr"><span class="key">交期</span><span class="val">7-15 天</span></div>
           </div>
           <div class="desc-text">
             <p>{{ t('products.bottomDrawer.desc') }}</p>
@@ -52,14 +51,14 @@
         <h3>产品规格参数</h3>
         <table>
           <tbody>
-            <tr><td>产品名称</td><td>底部挂抽系列 / Bottom-Drawer Tissue</td></tr>
-            <tr><td>品牌</td><td>OEM / ODM 支持</td></tr>
+            <tr><td>产品名称</td><td>时时美奔跑系列 — 悬挂式抽纸 / Ssmee Running Series Bottom-Drawer Tissue</td></tr>
+            <tr><td>规格</td><td>155×180mm | 5层 | 压花工艺</td></tr>
+            <tr><td>包装</td><td>400抽/提 | 1箱10提</td></tr>
             <tr><td>材质</td><td>100% 原生木浆，无再生浆</td></tr>
-            <tr><td>层数</td><td>5层（可定制4/5/6层）</td></tr>
-            <tr><td>单张尺寸</td><td>140×200 mm（大尺寸加宽）</td></tr>
-            <tr><td>每提张数</td><td>400抽/提（约2000层/提）</td></tr>
-            <tr><td>装箱规格</td><td>可协商（建议24提/箱）</td></tr>
-            <tr><td>起订量</td><td>300箱起订</td></tr>
+            <tr><td>工艺</td><td>压花工艺</td></tr>
+            <tr><td>特点</td><td>无荧光剂、无香精、无添加、可湿水</td></tr>
+            <tr><td>起订量</td><td>500箱</td></tr>
+            <tr><td>交期</td><td>7-15 天</td></tr>
             <tr><td>认证</td><td>ISO9001 / FDA / CE</td></tr>
             <tr><td>付款方式</td><td>T/T, L/C, Western Union</td></tr>
           </tbody>
@@ -73,7 +72,7 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
-const thumbs = ['/images/bottom-drawer.jpg', '/images/bottom-detail1.jpg', '/images/bottom-detail2.jpg']
+const thumbs = ['/images/bottom-drawer.jpg', '/images/factory-3.jpg', '/images/factory-4.jpg']
 const activeImg = ref(null)
 </script>
 

@@ -35,11 +35,11 @@
           <h2>{{ t('products.tissue.name') }}</h2>
           <p class="price-label">面议 / FOB报价</p>
           <div class="attrs">
-            <div class="attr"><span class="key">规格</span><span class="val">10包/提 | 5层 | 20cm×20cm</span></div>
+            <div class="attr"><span class="key">规格</span><span class="val">10包/提 | 1箱10提 | 5层 | 155×180mm</span></div>
+            <div class="attr"><span class="key">工艺</span><span class="val">压花工艺</span></div>
             <div class="attr"><span class="key">材质</span><span class="val">100% 原生木浆</span></div>
-            <div class="attr"><span class="key">层数</span><span class="val">5层加厚</span></div>
-            <div class="attr"><span class="key">包装</span><span class="val">OPP透明袋 + 纸箱</span></div>
-            <div class="attr"><span class="key">MOQ</span><span class="val">500 提</span></div>
+            <div class="attr"><span class="key">特点</span><span class="val">无荧光剂 | 无香精 | 无添加 | 可湿水</span></div>
+            <div class="attr"><span class="key">MOQ</span><span class="val">500 提起</span></div>
             <div class="attr"><span class="key">交期</span><span class="val">7-15 天</span></div>
           </div>
           <div class="desc-text">
@@ -60,15 +60,14 @@
         <h3>产品规格参数</h3>
         <table>
           <tbody>
-            <tr><td>产品名称</td><td>抽纸系列 / Facial Tissue</td></tr>
-            <tr><td>品牌</td><td>OEM / ODM 支持</td></tr>
+            <tr><td>产品名称</td><td>时时美奔跑系列 — 抽纸 / Ssmee Running Series Facial Tissue</td></tr>
+            <tr><td>规格</td><td>155×180mm | 5层 | 压花工艺</td></tr>
+            <tr><td>包装</td><td>10包/提 | 1箱10提</td></tr>
             <tr><td>材质</td><td>100% 原生木浆，无再生浆</td></tr>
-            <tr><td>层数</td><td>5层（可定制3/4/5层）</td></tr>
-            <tr><td>单张尺寸</td><td>20×20 cm（可定制）</td></tr>
-            <tr><td>每包抽数</td><td>100抽/包（可定制）</td></tr>
-            <tr><td>每提数量</td><td>10包/提（可定制）</td></tr>
-            <tr><td>装箱规格</td><td>可协商（建议30提/箱）</td></tr>
-            <tr><td>起订量</td><td>500提起订</td></tr>
+            <tr><td>工艺</td><td>压花工艺</td></tr>
+            <tr><td>特点</td><td>无荧光剂、无香精、无添加、可湿水</td></tr>
+            <tr><td>起订量</td><td>500提起</td></tr>
+            <tr><td>交期</td><td>7-15 天</td></tr>
             <tr><td>认证</td><td>ISO9001 / FDA / CE</td></tr>
             <tr><td>付款方式</td><td>T/T, L/C, Western Union</td></tr>
           </tbody>
@@ -82,7 +81,7 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
-const thumbs = ['/images/tissue-pack.jpg', '/images/tissue-detail1.jpg', '/images/tissue-detail2.jpg']
+const thumbs = ['/images/tissue-pack.jpg', '/images/factory-1.jpg', '/images/factory-2.jpg']
 const activeImg = ref(null)
 </script>
 
