@@ -14,9 +14,9 @@
   },
   "hero": {
     "title": "高端纸巾 OEM/ODM 制造商",
-    "subtitle": "二十年匠心制造，出口全球 | 专注抽纸、底部挂抽系列",
+    "subtitle": "出口俄罗斯 · 东南亚 · 全球市场",
     "cta": "获取报价",
-    "secondary": "了解更多"
+    "secondary": "查看产品"
   },
   "products": {
     "title": "产品中心",
@@ -118,6 +118,10 @@
     "factory": {
       "title": "工厂实景",
       "desc": "现代化生产基地，标准化生产流程。"
+    },
+    "hygiene": {
+      "title": "卫生许可证",
+      "desc": "生产卫生许可证，提供中文、英文、俄文三个版本。"
     }
   },
   "contact": {
@@ -300,52 +304,65 @@
         { "label": "名员工" }
       ]
     },
-    "stats": [
-      {
-        "num": "20+",
-        "label": "年行业经验"
-      },
-      {
-        "num": "5000+",
-        "label": "吨年产能"
-      },
-      {
-        "num": "15+",
-        "label": "个国家出口"
-      }
-    ],
-    "viewProduct": "查看详情 →",
-    "browseAll": "浏览全部产品",
     "whyUs": {
-      "title": "为什么选择时时美",
-      "subtitle": "20年匠心，品质见证",
+      "title": "为什么选择我们",
+      "subtitle": "匠心品质，全球信赖",
       "features": [
         {
-          "icon": "🏭",
-          "title": "源头工厂",
-          "desc": "自有工厂，标准化生产，年产能5000+吨，供货稳定"
+          "title": "匠心品质",
+          "desc": "严选原生木浆，20年工艺沉淀，每一张都值得信赖"
         },
         {
-          "icon": "✅",
-          "title": "品质认证",
-          "desc": "ISO9001认证，符合FDA/CE等国际出口标准"
+          "title": "全球出口",
+          "desc": "产品远销俄罗斯、东南亚等15+国家，出口品质保证"
         },
         {
-          "icon": "🚀",
-          "title": "快速交付",
-          "desc": "批量订单7-15天交付，加急可协商"
-        },
-        {
-          "icon": "🤝",
-          "title": "OEM/ODM",
+          "title": "OEM定制",
           "desc": "支持品牌定制，从设计到生产一站式服务"
+        },
+        {
+          "title": "快速交期",
+          "desc": "批量订单7-15天交付，加急订单可协商"
         }
       ]
     },
+    "viewProduct": "查看详情",
     "cta": {
       "title": "准备好开启合作了吗？",
       "desc": "获取专属报价，样品免费寄送",
       "btn": "立即询盘"
     }
+  },
+  "detail": {
+    "priceLabel": "面议 / FOB报价",
+    "spec": "规格",
+    "process": "工艺",
+    "material": "材质",
+    "features": "特点",
+    "leadTime": "交期",
+    "embossed": "压花工艺",
+    "virginPulp": "原生木浆",
+    "noRecycled": "无再生浆",
+    "noFluorescent": "无荧光剂",
+    "noFragrance": "无香精",
+    "noAdditives": "无添加",
+    "waterResistant": "可湿水",
+    "bundles": "提",
+    "cartons": "箱",
+    "days": "天",
+    "up": "起",
+    "packsPerBundle": "包/提",
+    "box": "箱",
+    "packaging": "包装",
+    "certification": "认证",
+    "payment": "付款方式",
+    "productName": "产品名称",
+    "specParams": "产品规格参数",
+    "scenarios": "适用场景：家庭、餐厅、酒店、企业礼品、促销活动。",
+    "bottomDrawerScenarios": "适用场景：家庭洗手间、办公楼、公共场所、酒店浴室、餐厅厨房。",
+    "inquiryNow": "立即询价",
+    "foodSafetyCert": "食品安全许可",
+    "compliant": "合规",
+    "freeSamples": "免费样品"
   }
 }

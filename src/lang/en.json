@@ -14,9 +14,9 @@
   },
   "hero": {
     "title": "Premium Tissue OEM/ODM Manufacturer",
-    "subtitle": "20 Years of Excellence | Export Worldwide | Focus on Facial Tissue & Bottom-Drawer Series",
+    "subtitle": "Export to Russia · SE Asia · Global Markets",
     "cta": "Get Quote",
-    "secondary": "Learn More"
+    "secondary": "View Products"
   },
   "products": {
     "title": "Products",
@@ -118,6 +118,10 @@
     "factory": {
       "title": "Factory Photos",
       "desc": "Modern production base, standardized production process."
+    },
+    "hygiene": {
+      "title": "Hygiene License",
+      "desc": "Production hygiene license, available in Chinese, English and Russian versions."
     }
   },
   "contact": {
@@ -300,43 +304,66 @@
         { "label": "Employees" }
       ]
     },
-    "stats": [
-      { "num": "20+", "label": "Years Experience" },
-      { "num": "5000+", "label": "Tons Capacity" },
-      { "num": "15+", "label": "Export Countries" }
-    ],
-    "viewProduct": "View Details →",
-    "browseAll": "Browse All Products",
     "whyUs": {
-      "title": "Why Choose Ssmee",
-      "subtitle": "20 Years of Excellence, Quality Guaranteed",
+      "title": "Why Choose Us",
+      "subtitle": "Quality Craftsmanship, Global Trust",
       "features": [
         {
-          "icon": "🏭",
-          "title": "Factory Direct",
-          "desc": "Own factory, standardized production, 5000+ tons annual capacity, stable supply"
+          "title": "Craftsmanship",
+          "desc": "Premium virgin wood pulp, 20 years expertise, every sheet trusted"
         },
         {
-          "icon": "✅",
-          "title": "Quality Certified",
-          "desc": "ISO9001 certified, meets FDA/CE international export standards"
+          "title": "Global Export",
+          "desc": "Exported to Russia, SE Asia and 15+ countries worldwide"
         },
         {
-          "icon": "🚀",
+          "title": "OEM Custom",
+          "desc": "Brand customization supported, one-stop service from design to production"
+        },
+        {
           "title": "Fast Delivery",
           "desc": "Bulk orders delivered in 7-15 days, rush orders negotiable"
-        },
-        {
-          "icon": "🤝",
-          "title": "OEM/ODM",
-          "desc": "Brand customization supported, one-stop service from design to production"
         }
       ]
     },
+    "viewProduct": "View Details",
+    "browseAll": "Browse All Products",
     "cta": {
       "title": "Ready to Start Cooperation?",
       "desc": "Get a customized quote, free samples available",
       "btn": "Get Quote Now"
     }
+  },
+  "detail": {
+    "priceLabel": "Contact for Quote / FOB Price",
+    "spec": "Specification",
+    "process": "Process",
+    "material": "Material",
+    "features": "Features",
+    "leadTime": "Lead Time",
+    "embossed": "Embossed Process",
+    "virginPulp": "Virgin Wood Pulp",
+    "noRecycled": "No Recycled Pulp",
+    "noFluorescent": "No Fluorescent Agent",
+    "noFragrance": "No Fragrance",
+    "noAdditives": "No Additives",
+    "waterResistant": "Water-Washable",
+    "bundles": "bundles",
+    "cartons": "cartons",
+    "days": "days",
+    "up": "up",
+    "packsPerBundle": " packs/bundle",
+    "box": " box contains ",
+    "packaging": "Packaging",
+    "certification": "Certification",
+    "payment": "Payment Terms",
+    "productName": "Product Name",
+    "specParams": "Product Specifications",
+    "scenarios": "Applications: Home, restaurant, hotel, corporate gifts, promotional events.",
+    "bottomDrawerScenarios": "Applications: Home bathroom, office, public spaces, hotel bathroom, restaurant kitchen.",
+    "inquiryNow": "Get Quote",
+    "foodSafetyCert": "Food Safety Certified",
+    "compliant": "Compliant",
+    "freeSamples": "Free Samples"
   }
 }

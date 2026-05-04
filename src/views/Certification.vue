@@ -18,8 +18,40 @@
             <div class="cert-img-wrapper">
               <img :src="img" :alt="`${t('cert.foodSafety.title')} ${i+1}`" />
               <div class="cert-overlay">
-                <button class="zoom-btn" @click="openLightbox(i)">🔍</button>
+                <button class="zoom-btn" @click="openLightbox(i)">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                    <path d="M11 8v6M8 11h6"/>
+                  </svg>
+                </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hygiene License -->
+    <section class="hygiene-section">
+      <div class="container">
+        <h2 class="section-heading">{{ t('cert.hygiene.title') }}</h2>
+        <p class="section-desc">{{ t('cert.hygiene.desc') }}</p>
+        <div class="hygiene-grid">
+          <div class="hygiene-card" v-for="(item, i) in hygieneItems" :key="i">
+            <div class="hygiene-img-wrapper">
+              <img :src="item.img" :alt="item.name" />
+            </div>
+            <div class="hygiene-info">
+              <h3>{{ item.name }}</h3>
+              <a :href="item.img" class="download-btn" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                  <polyline points="7,10 12,15 17,10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                {{ t('cert.reports.download') }}
+              </a>
             </div>
           </div>
         </div>
@@ -33,7 +65,15 @@
         <p class="section-desc">{{ t('cert.reports.desc') }}</p>
         <div class="download-grid">
           <div class="download-card" v-for="(report, i) in reports" :key="i">
-            <div class="download-icon">📄</div>
+            <div class="download-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#C9A96E" stroke-width="2">
+                <path d="M14 4h20l8 8v28a2 2 0 01-2 2H14a2 2 0 01-2-2V6a2 2 0 012-2z"/>
+                <polyline points="28,4 28,12 36,12"/>
+                <line x1="20" y1="22" x2="34" y2="22"/>
+                <line x1="20" y1="28" x2="34" y2="28"/>
+                <line x1="20" y1="34" x2="28" y2="34"/>
+              </svg>
+            </div>
             <div class="download-info">
               <h3>{{ report.name }}</h3>
               <p>{{ report.size }}</p>
@@ -61,10 +101,23 @@
 
     <!-- Lightbox -->
     <div class="lightbox" v-if="lightboxOpen" @click="closeLightbox">
-      <button class="lightbox-close" @click="closeLightbox">✕</button>
-      <button class="lightbox-nav prev" @click.stop="prevImage">‹</button>
+      <button class="lightbox-close" @click="closeLightbox">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <button class="lightbox-nav prev" @click.stop="prevImage">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </button>
       <img :src="certImages[lightboxIndex]" @click.stop />
-      <button class="lightbox-nav next" @click.stop="nextImage">›</button>
+      <button class="lightbox-nav next" @click.stop="nextImage">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </button>
     </div>
   </div>
 </template>
@@ -81,6 +134,12 @@ const certImages = [
   '/images/certs/资质4.png',
   '/images/certs/资质5.png',
   '/images/certs/资质6.png'
+]
+
+const hygieneItems = [
+  { name: '卫生许可证（中文）', img: '/images/hygiene-cn.jpg' },
+  { name: 'Hygiene License (English)', img: '/images/hygiene-en.jpg' },
+  { name: 'Гигиенический сертификат (Русский)', img: '/images/hygiene-ru.jpg' }
 ]
 
 const factoryImages = [
@@ -129,23 +188,24 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
 }
 
 /* Section */
-.cert-section, .download-section, .factory-section {
+.cert-section, .hygiene-section, .download-section, .factory-section {
   padding: 80px 0;
 }
 .cert-section { background: white; }
-.download-section { background: var(--color-bg); }
-.factory-section { background: white; }
+.hygiene-section { background: #F8FAFC; }
+.download-section { background: white; }
+.factory-section { background: #F8FAFC; }
 
 .section-heading {
   font-size: 2rem;
-  color: var(--color-primary);
+  color: #1A3A5C;
   text-align: center;
   margin: 0 0 16px;
   font-weight: 700;
 }
 .section-desc {
   text-align: center;
-  color: var(--color-text-light);
+  color: #6B7280;
   max-width: 600px;
   margin: 0 auto 48px;
   font-size: 1rem;
@@ -204,12 +264,54 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   border-radius: 50%;
   background: white;
   border: none;
-  font-size: 24px;
+  color: #1A3A5C;
   cursor: pointer;
   transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .zoom-btn:hover {
   transform: scale(1.15);
+}
+
+/* Hygiene Section */
+.hygiene-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.hygiene-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(26,58,92,0.08);
+  transition: all 0.4s;
+}
+.hygiene-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(26,58,92,0.12);
+}
+.hygiene-img-wrapper {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  background: #f5f7fa;
+}
+.hygiene-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 16px;
+}
+.hygiene-info {
+  padding: 20px;
+  text-align: center;
+}
+.hygiene-info h3 {
+  font-size: 1rem;
+  color: #1A3A5C;
+  margin: 0 0 16px;
+  font-weight: 600;
 }
 
 /* Download Section */
@@ -219,7 +321,7 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   gap: 28px;
 }
 .download-card {
-  background: white;
+  background: #F8FAFC;
   border-radius: 16px;
   padding: 32px;
   display: flex;
@@ -234,22 +336,21 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   box-shadow: 0 12px 32px rgba(26,58,92,0.12);
 }
 .download-icon {
-  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 .download-info h3 {
   font-size: 1.1rem;
-  color: var(--color-primary);
+  color: #1A3A5C;
   margin: 0 0 8px;
   font-weight: 600;
 }
 .download-info p {
   font-size: 0.85rem;
-  color: var(--color-text-light);
+  color: #6B7280;
   margin: 0 0 24px;
 }
 .download-btn {
-  background: var(--color-gold);
+  background: linear-gradient(135deg, #C9A96E 0%, #B8966A 100%);
   color: white;
   padding: 12px 32px;
   border-radius: 8px;
@@ -257,10 +358,13 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   font-size: 0.95rem;
   transition: all 0.3s;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .download-btn:hover {
-  background: #B8966A;
   transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(201,169,110,0.4);
 }
 
 /* Factory Grid */
@@ -311,9 +415,11 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   background: rgba(255,255,255,0.15);
   border: none;
   color: white;
-  font-size: 24px;
   cursor: pointer;
   transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .lightbox-close:hover {
   background: rgba(255,255,255,0.25);
@@ -328,9 +434,11 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   border: none;
   border-radius: 50%;
   color: white;
-  font-size: 28px;
   cursor: pointer;
   transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .lightbox-nav:hover {
   background: rgba(255,255,255,0.25);
@@ -338,19 +446,28 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
 .lightbox-nav.prev { left: 32px; }
 .lightbox-nav.next { right: 32px; }
 
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .cert-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .hygiene-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
   .factory-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 767px) {
   .page-hero { padding: 100px 0 60px; }
   .page-hero h1 { font-size: 2rem; }
   .cert-grid { grid-template-columns: 1fr; gap: 20px; }
+  .hygiene-grid { grid-template-columns: 1fr; gap: 20px; }
   .download-grid { grid-template-columns: 1fr; gap: 20px; }
   .factory-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .lightbox { padding: 16px; }
-  .lightbox-nav { width: 44px; height: 44px; font-size: 22px; }
+  .lightbox-nav { width: 44px; height: 44px; }
   .lightbox-nav.prev { left: 12px; }
   .lightbox-nav.next { right: 12px; }
 }
