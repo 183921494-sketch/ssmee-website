@@ -61,17 +61,41 @@
     },
     "history": {
       "title": "Our Journey",
-      "h1": { "title": "Brand Founded", "desc": "Ssmee brand established, tissue production began" },
-      "h2": { "title": "Scale Expansion", "desc": "New modern factory built, capacity increased 300%" },
-      "h3": { "title": "Going Global", "desc": "Products exported to Southeast Asia, Russia markets" },
-      "h4": { "title": "Brand Upgrade", "desc": "Full brand upgrade, premium product series launched" }
+      "h1": {
+        "title": "Brand Founded",
+        "desc": "Ssmee brand established, tissue production began"
+      },
+      "h2": {
+        "title": "Scale Expansion",
+        "desc": "New modern factory built, capacity increased 300%"
+      },
+      "h3": {
+        "title": "Going Global",
+        "desc": "Products exported to Southeast Asia, Russia markets"
+      },
+      "h4": {
+        "title": "Brand Upgrade",
+        "desc": "Full brand upgrade, premium product series launched"
+      }
     },
     "values": {
       "title": "Core Values",
-      "v1": { "title": "Quality First", "desc": "Strict control at every process" },
-      "v2": { "title": "Innovation Driven", "desc": "Continuous R&D for new products" },
-      "v3": { "title": "Customer Focus", "desc": "Deep understanding of needs" },
-      "v4": { "title": "Integrity & Win-Win", "desc": "Honest business, mutual success" }
+      "v1": {
+        "title": "Quality First",
+        "desc": "Strict control at every process"
+      },
+      "v2": {
+        "title": "Innovation Driven",
+        "desc": "Continuous R&D for new products"
+      },
+      "v3": {
+        "title": "Customer Focus",
+        "desc": "Deep understanding of needs"
+      },
+      "v4": {
+        "title": "Integrity & Win-Win",
+        "desc": "Honest business, mutual success"
+      }
     },
     "certifications": {
       "title": "Certifications",
@@ -84,15 +108,33 @@
     "subtitle": "Authoritative Certification, Quality Guaranteed",
     "quality": {
       "title": "Quality System Certification",
-      "iso9001": { "name": "ISO 9001", "desc": "Quality Management System" },
-      "iso14001": { "name": "ISO 14001", "desc": "Environmental Management System" },
-      "iso45001": { "name": "ISO 45001", "desc": "Occupational Health & Safety" }
+      "iso9001": {
+        "name": "ISO 9001",
+        "desc": "Quality Management System"
+      },
+      "iso14001": {
+        "name": "ISO 14001",
+        "desc": "Environmental Management System"
+      },
+      "iso45001": {
+        "name": "ISO 45001",
+        "desc": "Occupational Health & Safety"
+      }
     },
     "product": {
       "title": "Product Certification",
-      "ce": { "name": "CE Marking", "desc": "EU Market Access" },
-      "fda": { "name": "FDA Approved", "desc": "US Food & Drug Safety" },
-      "sc": { "name": "SC License", "desc": "Food-Related Product Permit" }
+      "ce": {
+        "name": "CE Marking",
+        "desc": "EU Market Access"
+      },
+      "fda": {
+        "name": "FDA Approved",
+        "desc": "US Food & Drug Safety"
+      },
+      "sc": {
+        "name": "SC License",
+        "desc": "Food-Related Product Permit"
+      }
     },
     "export": {
       "title": "Export Qualifications",
@@ -111,10 +153,22 @@
     },
     "qc": {
       "title": "Quality Control Process",
-      "s1": { "title": "Raw Material Inspection", "desc": "100% virgin pulp testing" },
-      "s2": { "title": "Process Control", "desc": "SPC statistical control" },
-      "s3": { "title": "Product Testing", "desc": "Full physical property tests" },
-      "s4": { "title": "Shipment Inspection", "desc": "Batch sampling & release" }
+      "s1": {
+        "title": "Raw Material Inspection",
+        "desc": "100% virgin pulp testing"
+      },
+      "s2": {
+        "title": "Process Control",
+        "desc": "SPC statistical control"
+      },
+      "s3": {
+        "title": "Product Testing",
+        "desc": "Full physical property tests"
+      },
+      "s4": {
+        "title": "Shipment Inspection",
+        "desc": "Batch sampling & release"
+      }
     },
     "downloadReports": "Download Test Reports"
   },
@@ -123,12 +177,26 @@
     "subtitle": "Looking forward to building long-term partnerships",
     "info": {
       "title": "Contact Information",
-      "address": { "label": "Address", "value": "Room 201, Beiwang Road (Zhongtang Section), Zhongtang Town, Dongguan City, Guangdong Province, China" },
-      "phone": { "label": "Phone" },
-      "email": { "label": "Email" },
-      "wechat": { "label": "WeChat" },
-      "manager": { "label": "Manager" },
-      "hours": { "label": "Business Hours", "value": "Mon-Sat 08:00-18:00" }
+      "address": {
+        "label": "Address",
+        "value": "Room 201, Beiwang Road (Zhongtang Section), Zhongtang Town, Dongguan City, Guangdong Province, China"
+      },
+      "phone": {
+        "label": "Phone"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "wechat": {
+        "label": "WeChat"
+      },
+      "manager": {
+        "label": "Manager"
+      },
+      "hours": {
+        "label": "Business Hours",
+        "value": "Mon-Sat 08:00-18:00"
+      }
     },
     "form": {
       "title": "Send Inquiry",
@@ -161,27 +229,51 @@
     "subtitle": "Partner with Ssmee, Create Future Together",
     "advantages": {
       "title": "Partnership Advantages",
-      "a1": { "title": "Factory Direct", "desc": "Own factory, first-hand source, best price" },
-      "a2": { "title": "Quality Guaranteed", "desc": "ISO certified, export quality, <1% return rate" },
-      "a3": { "title": "Profit Margin", "desc": "Factory price, sufficient profit space" },
-      "a4": { "title": "Export Experience", "desc": "20 years export experience for global markets" }
+      "a1": {
+        "title": "Factory Direct",
+        "desc": "Own factory, first-hand source, best price"
+      },
+      "a2": {
+        "title": "Quality Guaranteed",
+        "desc": "ISO certified, export quality, <1% return rate"
+      },
+      "a3": {
+        "title": "Profit Margin",
+        "desc": "Factory price, sufficient profit space"
+      },
+      "a4": {
+        "title": "Export Experience",
+        "desc": "20 years export experience for global markets"
+      }
     },
     "models": {
       "title": "Cooperation Models",
       "m1": {
         "title": "Regional Agency",
         "desc": "Exclusive regional rights with territory protection",
-        "features": ["Exclusive Rights", "Territory Protection", "Marketing Support Fund"]
+        "features": [
+          "Exclusive Rights",
+          "Territory Protection",
+          "Marketing Support Fund"
+        ]
       },
       "m2": {
         "title": "Wholesale Distribution",
         "desc": "Volume discount for channel partners",
-        "features": ["Tiered Pricing", "Credit Terms", "Promo Materials"]
+        "features": [
+          "Tiered Pricing",
+          "Credit Terms",
+          "Promo Materials"
+        ]
       },
       "m3": {
         "title": "OEM/ODM",
         "desc": "Private label customization service",
-        "features": ["Brand Customization", "Package Design", "Small MOQ Trial"]
+        "features": [
+          "Brand Customization",
+          "Package Design",
+          "Small MOQ Trial"
+        ]
       }
     },
     "support": {
@@ -195,10 +287,22 @@
     },
     "process": {
       "title": "Cooperation Process",
-      "p1": { "title": "Inquiry", "desc": "Call/Email for partnership info" },
-      "p2": { "title": "Factory Visit", "desc": "Schedule factory tour" },
-      "p3": { "title": "Sign Contract", "desc": "Confirm model and sign agreement" },
-      "p4": { "title": "Start Cooperation", "desc": "First order and begin partnership" }
+      "p1": {
+        "title": "Inquiry",
+        "desc": "Call/Email for partnership info"
+      },
+      "p2": {
+        "title": "Factory Visit",
+        "desc": "Schedule factory tour"
+      },
+      "p3": {
+        "title": "Sign Contract",
+        "desc": "Confirm model and sign agreement"
+      },
+      "p4": {
+        "title": "Start Cooperation",
+        "desc": "First order and begin partnership"
+      }
     },
     "cta": {
       "title": "Start Partnership Today",
@@ -220,6 +324,55 @@
       "moq": "500 bundles",
       "leadtime": "7-15 days",
       "payment": "T/T, L/C, Western Union"
+    }
+  },
+  "home": {
+    "stats": [
+      {
+        "num": "20+",
+        "label": "Years Experience"
+      },
+      {
+        "num": "5000+",
+        "label": "Tons Capacity"
+      },
+      {
+        "num": "15+",
+        "label": "Export Countries"
+      }
+    ],
+    "viewProduct": "View Details →",
+    "browseAll": "Browse All Products",
+    "whyUs": {
+      "title": "Why Choose Ssmee",
+      "subtitle": "20 Years of Excellence, Quality Guaranteed",
+      "features": [
+        {
+          "icon": "🏭",
+          "title": "Factory Direct",
+          "desc": "Own factory, standardized production, 5000+ tons annual capacity, stable supply"
+        },
+        {
+          "icon": "✅",
+          "title": "Quality Certified",
+          "desc": "ISO9001 certified, meets FDA/CE international export standards"
+        },
+        {
+          "icon": "🚀",
+          "title": "Fast Delivery",
+          "desc": "Bulk orders delivered in 7-15 days, rush orders negotiable"
+        },
+        {
+          "icon": "🤝",
+          "title": "OEM/ODM",
+          "desc": "Brand customization supported, one-stop service from design to production"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Cooperation?",
+      "desc": "Get a customized quote, free samples available",
+      "btn": "Get Quote Now"
     }
   }
 }

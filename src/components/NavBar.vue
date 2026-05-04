@@ -3,7 +3,7 @@
     <div class="container nav-inner">
       <!-- Logo -->
       <router-link to="/" class="logo">
-        <img src="/favicon.svg" alt="Ssmee" width="36" height="36" />
+        <img src="/images/ssmee-logo.png" alt="Ssmee" width="36" height="36" />
         <span class="logo-text">Ssmee</span>
       </router-link>
 

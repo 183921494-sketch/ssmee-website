@@ -5,7 +5,7 @@
         <!-- Brand -->
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="/favicon.svg" alt="Ssmee" width="32" height="32" />
+            <img src="/images/ssmee-logo.png" alt="Ssmee" width="32" height="32" />
             <span>Ssmee</span>
           </div>
           <p class="footer-desc">{{ t('brand.tagline') }}</p>

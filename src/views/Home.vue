@@ -11,17 +11,9 @@
             <router-link to="/products" class="btn btn-outline">{{ t('hero.secondary') }}</router-link>
           </div>
           <div class="hero-stats">
-            <div class="stat">
-              <span class="num">20+</span>
-              <span class="label">年行业经验</span>
-            </div>
-            <div class="stat">
-              <span class="num">5000+</span>
-              <span class="label">吨年产能</span>
-            </div>
-            <div class="stat">
-              <span class="num">15+</span>
-              <span class="label">个国家出口</span>
+            <div class="stat" v-for="(s, i) in homeStats" :key="i">
+              <span class="num">{{ s.num }}</span>
+              <span class="label">{{ t(`home.stats.${i}.label`) }}</span>
             </div>
           </div>
         </div>
@@ -38,29 +30,29 @@
         <div class="product-grid">
           <div class="product-card">
             <div class="product-img">
-              <img src="/images/tissue-pack.jpg" alt="抽纸系列" />
+              <img src="/images/tissue-pack.jpg" alt="Ssmee Facial Tissue" />
             </div>
             <div class="product-info">
               <h3>{{ t('products.tissue.name') }}</h3>
               <p class="spec">{{ t('products.tissue.spec') }}</p>
               <p class="desc">{{ t('products.tissue.desc') }}</p>
-              <router-link to="/products/tissue" class="btn btn-ghost">查看详情 →</router-link>
+              <router-link to="/products/tissue" class="btn btn-ghost">{{ t('home.viewProduct') }}</router-link>
             </div>
           </div>
           <div class="product-card">
             <div class="product-img">
-              <img src="/images/bottom-drawer.jpg" alt="底部挂抽系列" />
+              <img src="/images/bottom-drawer.jpg" alt="Ssmee Bottom-Drawer Tissue" />
             </div>
             <div class="product-info">
               <h3>{{ t('products.bottomDrawer.name') }}</h3>
               <p class="spec">{{ t('products.bottomDrawer.spec') }}</p>
               <p class="desc">{{ t('products.bottomDrawer.desc') }}</p>
-              <router-link to="/products/bottom-drawer" class="btn btn-ghost">查看详情 →</router-link>
+              <router-link to="/products/bottom-drawer" class="btn btn-ghost">{{ t('home.viewProduct') }}</router-link>
             </div>
           </div>
         </div>
         <div class="text-center mt-8">
-          <router-link to="/products" class="btn btn-primary">浏览全部产品</router-link>
+          <router-link to="/products" class="btn btn-primary">{{ t('home.browseAll') }}</router-link>
         </div>
       </div>
     </section>
@@ -69,29 +61,14 @@
     <section class="why-us">
       <div class="container">
         <div class="section-title">
-          <h2>为什么选择时时美</h2>
-          <p>20年匠心，品质见证</p>
+          <h2>{{ t('home.whyUs.title') }}</h2>
+          <p>{{ t('home.whyUs.subtitle') }}</p>
         </div>
         <div class="features-grid">
-          <div class="feature">
-            <div class="icon">🏭</div>
-            <h3>源头工厂</h3>
-            <p>自有工厂，标准化生产，年产能5000+吨，供货稳定</p>
-          </div>
-          <div class="feature">
-            <div class="icon">✅</div>
-            <h3>品质认证</h3>
-            <p>ISO9001认证，符合FDA/CE等国际出口标准</p>
-          </div>
-          <div class="feature">
-            <div class="icon">🚀</div>
-            <h3>快速交付</h3>
-            <p>批量订单7-15天交付，加急可协商</p>
-          </div>
-          <div class="feature">
-            <div class="icon">🤝</div>
-            <h3>OEM/ODM</h3>
-            <p>支持品牌定制，从设计到生产一站式服务</p>
+          <div class="feature" v-for="(f, i) in homeWhyFeatures" :key="i">
+            <div class="icon">{{ f.icon }}</div>
+            <h3>{{ t(`home.whyUs.features.${i}.title`) }}</h3>
+            <p>{{ t(`home.whyUs.features.${i}.desc`) }}</p>
           </div>
         </div>
       </div>
@@ -101,9 +78,9 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-box">
-          <h2>准备好开启合作了吗？</h2>
-          <p>获取专属报价，样品免费寄送</p>
-          <router-link to="/contact" class="btn btn-gold">立即询盘</router-link>
+          <h2>{{ t('home.cta.title') }}</h2>
+          <p>{{ t('home.cta.desc') }}</p>
+          <router-link to="/contact" class="btn btn-gold">{{ t('home.cta.btn') }}</router-link>
         </div>
       </div>
     </section>
@@ -113,6 +90,18 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
+
+const homeStats = [
+  { num: '20+', label: '' },
+  { num: '5000+', label: '' },
+  { num: '15+', label: '' }
+]
+const homeWhyFeatures = [
+  { icon: '🏭' },
+  { icon: '✅' },
+  { icon: '🚀' },
+  { icon: '🤝' }
+]
 </script>
 
 <style scoped>
