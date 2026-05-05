@@ -11,7 +11,7 @@
         <!-- 抽纸 -->
         <div class="product-row">
           <div class="product-img">
-            <img src="/images/tissue-pack.jpg" alt="抽纸系列" />
+            <img src="/images/tissue-pack.jpg" :alt="t('products.tissue.name')" />
           </div>
           <div class="product-detail">
             <span class="tag hot">{{ t('home.hot') }}</span>
@@ -24,7 +24,7 @@
         <!-- 底部挂抽 -->
         <div class="product-row reverse">
           <div class="product-img">
-            <img src="/images/bottom-drawer.jpg" alt="底部挂抽系列" />
+            <img src="/images/bottom-drawer.jpg" :alt="t('products.bottomDrawer.name')" />
           </div>
           <div class="product-detail">
             <span class="tag popular">{{ t('home.popular') }}</span>

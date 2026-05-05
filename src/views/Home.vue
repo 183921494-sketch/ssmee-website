@@ -91,11 +91,11 @@
               <h3>{{ t('products.tissue.name') }}</h3>
               <p class="spec">{{ t('products.tissue.spec') }}</p>
               <div class="features">
-                <span class="feature-tag">压花工艺</span>
-                <span class="feature-tag">无荧光剂</span>
-                <span class="feature-tag">无香精</span>
-                <span class="feature-tag">无添加</span>
-                <span class="feature-tag">可湿水</span>
+                <span class="feature-tag">{{ t('product.specs.process') }}</span>
+                <span class="feature-tag">{{ t('detail.noFluorescent') }}</span>
+                <span class="feature-tag">{{ t('detail.noFragrance') }}</span>
+                <span class="feature-tag">{{ t('detail.noAdditives') }}</span>
+                <span class="feature-tag">{{ t('detail.waterResistant') }}</span>
               </div>
               <router-link to="/products/tissue" class="btn btn-ghost">
                 {{ t('home.viewProduct') }}
@@ -115,11 +115,11 @@
               <h3>{{ t('products.bottomDrawer.name') }}</h3>
               <p class="spec">{{ t('products.bottomDrawer.spec') }}</p>
               <div class="features">
-                <span class="feature-tag">压花工艺</span>
-                <span class="feature-tag">无荧光剂</span>
-                <span class="feature-tag">无香精</span>
-                <span class="feature-tag">无添加</span>
-                <span class="feature-tag">可湿水</span>
+                <span class="feature-tag">{{ t('product.specs.process') }}</span>
+                <span class="feature-tag">{{ t('detail.noFluorescent') }}</span>
+                <span class="feature-tag">{{ t('detail.noFragrance') }}</span>
+                <span class="feature-tag">{{ t('detail.noAdditives') }}</span>
+                <span class="feature-tag">{{ t('detail.waterResistant') }}</span>
               </div>
               <router-link to="/products/bottom-drawer" class="btn btn-ghost">
                 {{ t('home.viewProduct') }}

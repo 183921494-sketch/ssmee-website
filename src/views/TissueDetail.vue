@@ -35,7 +35,7 @@
           <h2>{{ t('products.tissue.name') }}</h2>
           <p class="price-label">{{ t('detail.priceLabel') }}</p>
           <div class="attrs">
-            <div class="attr"><span class="key">{{ t('detail.spec') }}</span><span class="val">10包/提 | 1箱10提 | 5层 | 155×180mm</span></div>
+            <div class="attr"><span class="key">{{ t('detail.spec') }}</span><span class="val">10{{ t('detail.packsPerBundle') }} | 1{{ t('detail.box') }}10{{ t('detail.bundles') }} | {{ t('product.specs.ply') }} | {{ t('product.specs.size') }}</span></div>
             <div class="attr"><span class="key">{{ t('detail.process') }}</span><span class="val">{{ t('detail.embossed') }}</span></div>
             <div class="attr"><span class="key">{{ t('detail.material') }}</span><span class="val">100% {{ t('detail.virginPulp') }}</span></div>
             <div class="attr"><span class="key">{{ t('detail.features') }}</span><span class="val">{{ t('detail.noFluorescent') }} | {{ t('detail.noFragrance') }} | {{ t('detail.noAdditives') }} | {{ t('detail.waterResistant') }}</span></div>
@@ -61,7 +61,7 @@
         <table>
           <tbody>
             <tr><td>{{ t('detail.productName') }}</td><td>{{ t('products.tissue.name') }}</td></tr>
-            <tr><td>{{ t('detail.spec') }}</td><td>155×180mm | 5层 | {{ t('detail.embossed') }}</td></tr>
+            <tr><td>{{ t('detail.spec') }}</td><td>{{ t('product.specs.size') }} | {{ t('product.specs.ply') }} | {{ t('detail.embossed') }}</td></tr>
             <tr><td>{{ t('detail.packaging') }}</td><td>10{{ t('detail.packsPerBundle') }} | 1{{ t('detail.box') }}10{{ t('detail.bundles') }}</td></tr>
             <tr><td>{{ t('detail.material') }}</td><td>100% {{ t('detail.virginPulp') }}，{{ t('detail.noRecycled') }}</td></tr>
             <tr><td>{{ t('detail.process') }}</td><td>{{ t('detail.embossed') }}</td></tr>

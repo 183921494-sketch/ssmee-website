@@ -27,7 +27,7 @@
           <h2>{{ t('products.bottomDrawer.name') }}</h2>
           <p class="price-label">{{ t('detail.priceLabel') }}</p>
           <div class="attrs">
-            <div class="attr"><span class="key">{{ t('detail.spec') }}</span><span class="val">400抽/提 | 1箱10提 | 5层 | 155×175mm</span></div>
+            <div class="attr"><span class="key">{{ t('detail.spec') }}</span><span class="val">400{{ t('detail.packsPerBundle') }} | 1{{ t('detail.box') }}10{{ t('detail.bundles') }} | {{ t('product.bottomSpecs.ply') }} | {{ t('product.bottomSpecs.size') }}</span></div>
             <div class="attr"><span class="key">{{ t('detail.process') }}</span><span class="val">{{ t('detail.embossed') }}</span></div>
             <div class="attr"><span class="key">{{ t('detail.material') }}</span><span class="val">100% {{ t('detail.virginPulp') }}</span></div>
             <div class="attr"><span class="key">{{ t('detail.features') }}</span><span class="val">{{ t('detail.noFluorescent') }} | {{ t('detail.noFragrance') }} | {{ t('detail.noAdditives') }} | {{ t('detail.waterResistant') }}</span></div>
@@ -52,12 +52,12 @@
         <table>
           <tbody>
             <tr><td>{{ t('detail.productName') }}</td><td>{{ t('products.bottomDrawer.name') }}</td></tr>
-            <tr><td>{{ t('detail.spec') }}</td><td>155×175mm | 5层 | {{ t('detail.embossed') }}</td></tr>
-            <tr><td>{{ t('detail.packaging') }}</td><td>400抽/提 | 1箱10提</td></tr>
+            <tr><td>{{ t('detail.spec') }}</td><td>{{ t('product.bottomSpecs.size') }} | {{ t('product.bottomSpecs.ply') }} | {{ t('detail.embossed') }}</td></tr>
+            <tr><td>{{ t('detail.packaging') }}</td><td>400{{ t('detail.packsPerBundle') }} | 1{{ t('detail.box') }}10{{ t('detail.bundles') }}</td></tr>
             <tr><td>{{ t('detail.material') }}</td><td>100% {{ t('detail.virginPulp') }}，{{ t('detail.noRecycled') }}</td></tr>
             <tr><td>{{ t('detail.process') }}</td><td>{{ t('detail.embossed') }}</td></tr>
             <tr><td>{{ t('detail.features') }}</td><td>{{ t('detail.noFluorescent') }}、{{ t('detail.noFragrance') }}、{{ t('detail.noAdditives') }}、{{ t('detail.waterResistant') }}</td></tr>
-            <tr><td>MOQ</td><td>500箱</td></tr>
+            <tr><td>MOQ</td><td>500{{ t('detail.cartons') }}{{ t('detail.up') }}</td></tr>
             <tr><td>{{ t('detail.leadTime') }}</td><td>7-15 {{ t('detail.days') }}</td></tr>
             <tr><td>{{ t('detail.certification') }}</td><td>ISO9001 / FDA / CE</td></tr>
             <tr><td>{{ t('detail.payment') }}</td><td>T/T, L/C, Western Union</td></tr>
