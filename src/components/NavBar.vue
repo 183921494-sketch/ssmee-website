@@ -146,7 +146,7 @@ onUnmounted(() => {
 
 .nav-links a:hover {
   color: var(--color-primary);
-  background: rgba(26,58,92,0.06);
+  background: rgba(43,77,26,0.06);
 }
 
 .nav-links a.router-link-active {
@@ -184,7 +184,7 @@ onUnmounted(() => {
 }
 
 .lang-switch button:hover {
-  background: rgba(26,58,92,0.06);
+  background: rgba(43,77,26,0.06);
   color: var(--color-primary);
 }
 

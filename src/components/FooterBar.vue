@@ -58,7 +58,7 @@ const { t } = useI18n()
 
 <style scoped>
 .footer {
-  background: var(--color-primary);
+  background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
   padding: 60px 0 0;
 }

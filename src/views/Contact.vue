@@ -182,7 +182,7 @@ const submitForm = async () => {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1A3A5C 0%, #0D7D8A 100%);
+  background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -216,7 +216,7 @@ const submitForm = async () => {
 
 .contact-info h2, .inquiry-form h2 {
   font-size: 1.8rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 30px;
 }
 
@@ -225,7 +225,7 @@ const submitForm = async () => {
   gap: 20px;
   margin-bottom: 30px;
   padding: 20px;
-  background: #f8f9fa;
+  background: #F7F9F4;
   border-radius: 12px;
 }
 
@@ -241,12 +241,12 @@ const submitForm = async () => {
 
 .info-item p {
   font-size: 1.1rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   font-weight: 500;
 }
 
 .inquiry-form form {
-  background: #f8f9fa;
+  background: #F7F9F4;
   padding: 40px;
   border-radius: 12px;
 }
@@ -279,7 +279,7 @@ input, select, textarea {
 
 input:focus, select:focus, textarea:focus {
   outline: none;
-  border-color: #0D7D8A;
+  border-color: #4A7C3F;
 }
 
 textarea {
@@ -289,7 +289,7 @@ textarea {
 .submit-btn {
   width: 100%;
   padding: 15px;
-  background: #F5A623;
+  background: #C9A96E;
   color: white;
   border: none;
   border-radius: 8px;
@@ -300,7 +300,7 @@ textarea {
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: #d8941f;
+  background: #B8945A;
 }
 
 .submit-btn:disabled {
@@ -310,12 +310,12 @@ textarea {
 
 .map-section {
   padding: 60px 0;
-  background: #f8f9fa;
+  background: #F7F9F4;
 }
 
 .map-section h2 {
   font-size: 1.8rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   text-align: center;
   margin-bottom: 30px;
 }

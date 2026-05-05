@@ -78,7 +78,7 @@ const activeImg = ref(null)
 
 <style scoped>
 .page-header {
-  background: linear-gradient(135deg, #1A3A5C, #0F2A4A);
+  background: linear-gradient(135deg, #2B4D1A, #1B3509);
   color: white;
   padding: 100px 0 60px;
 }
@@ -97,7 +97,7 @@ const activeImg = ref(null)
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 16px;
-  background: #f5f7fa;
+  background: #F7F9F4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +122,7 @@ const activeImg = ref(null)
 }
 .thumb-list img.active, .thumb-list img:hover { border-color: #C9A96E; }
 
-.detail-info h2 { font-size: 1.8rem; color: #1A3A5C; margin: 0 0 12px; font-weight: 700; }
+.detail-info h2 { font-size: 1.8rem; color: #2B4D1A; margin: 0 0 12px; font-weight: 700; }
 .price-label { font-size: 1rem; color: #C9A96E; font-weight: 600; margin: 0 0 24px; }
 .attrs { border: 1px solid #E5E7EB; border-radius: 8px; overflow: hidden; margin-bottom: 20px; }
 .attr {
@@ -140,7 +140,7 @@ const activeImg = ref(null)
 .trust-badges span { font-size: 0.85rem; color: #6B7280; }
 
 .spec-table { background: white; border: 1px solid #E5E7EB; border-radius: 12px; overflow: hidden; }
-.spec-table h3 { padding: 20px 24px; margin: 0; font-size: 1.1rem; color: #1A3A5C; border-bottom: 1px solid #E5E7EB; font-weight: 700; }
+.spec-table h3 { padding: 20px 24px; margin: 0; font-size: 1.1rem; color: #2B4D1A; border-bottom: 1px solid #E5E7EB; font-weight: 700; }
 .spec-table table { width: 100%; border-collapse: collapse; }
 .spec-table td { padding: 14px 24px; font-size: 0.9rem; border-bottom: 1px solid #E5E7EB; }
 .spec-table tr:last-child td { border-bottom: none; }

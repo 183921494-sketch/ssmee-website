@@ -14,19 +14,23 @@ import FooterBar from './components/FooterBar.vue'
 </script>
 
 <style>
-/* 全局CSS变量 - 品牌色系 */
+/* 全局CSS变量 - 品牌色系（自然绿+金色） */
 :root {
-  --color-primary: #1A3A5C;     /* 深蓝 - 主色 */
+  --color-primary: #2B4D1A;     /* 深林绿 - 主色 */
+  --color-primary-dark: #1B3509; /* 深绿 - 暗色 */
+  --color-primary-light: #3D6B2E;/* 中绿 - 亮色 */
   --color-gold: #C9A96E;         /* 金色 - 强调色 */
-  --color-teal: #0D7D8A;         /* 青色 - 数据色 */
-  --color-orange: #E8702A;       /* 橙色 - 警示色 */
-  --color-bg: #FAFBFC;           /* 背景色 */
+  --color-gold-dark: #B8945A;    /* 深金 - 按钮hover */
+  --color-teal: #4A7C3F;         /* 翠绿 - 数据色 */
+  --color-orange: #D4872A;       /* 琥珀 - 警示色 */
+  --color-bg: #F7F9F4;           /* 浅绿背景 */
+  --color-bg-alt: #EEF3E8;       /* 交替背景 */
   --color-text: #1A1A1A;         /* 正文色 */
-  --color-text-light: #666666;    /* 浅色文字 */
-  --color-border: #E5E7EB;       /* 边框色 */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+  --color-text-light: #5A6B52;   /* 浅色文字 */
+  --color-border: #D5DFCC;       /* 边框色 */
+  --shadow-sm: 0 1px 3px rgba(43,77,26,0.08);
+  --shadow-md: 0 4px 12px rgba(43,77,26,0.1);
+  --shadow-lg: 0 8px 30px rgba(43,77,26,0.12);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 20px;
@@ -89,7 +93,7 @@ button {
   color: white;
 }
 .btn-primary:hover {
-  background: #0F2A4A;
+  background: var(--color-primary-dark);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }

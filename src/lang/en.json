@@ -13,6 +13,7 @@
     "cooperation": "Cooperate"
   },
   "hero": {
+    "badge": "PREMIUM TISSUE BRAND",
     "title": "Premium Tissue OEM/ODM Manufacturer",
     "subtitle": "Export to Russia · SE Asia · Global Markets",
     "cta": "Get Quote",
@@ -298,10 +299,18 @@
       "title": "Factory Strength",
       "subtitle": "Modern production base, standardized production process",
       "items": [
-        { "label": "Years Experience" },
-        { "label": "Tons Capacity" },
-        { "label": "Export Countries" },
-        { "label": "Employees" }
+        {
+          "label": "Years Experience"
+        },
+        {
+          "label": "Tons Capacity"
+        },
+        {
+          "label": "Export Countries"
+        },
+        {
+          "label": "Employees"
+        }
       ]
     },
     "whyUs": {

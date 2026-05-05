@@ -109,7 +109,7 @@ const values = [
 }
 
 .hero {
-  background: linear-gradient(135deg, #1A3A5C 0%, #0D7D8A 100%);
+  background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -133,7 +133,7 @@ const values = [
 
 .overview {
   padding: 80px 0;
-  background: #f8f9fa;
+  background: #F7F9F4;
 }
 
 .overview-grid {
@@ -145,7 +145,7 @@ const values = [
 
 .overview-text h2 {
   font-size: 2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 1.5rem;
 }
 
@@ -174,7 +174,7 @@ const values = [
   display: block;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #F5A623;
+  color: #C9A96E;
 }
 
 .stat-label {
@@ -190,7 +190,7 @@ const values = [
 
 .history h2 {
   font-size: 2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -208,7 +208,7 @@ const values = [
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #0D7D8A;
+  background: #4A7C3F;
   transform: translateX(-50%);
 }
 
@@ -221,7 +221,7 @@ const values = [
 .timeline-year {
   width: 80px;
   height: 80px;
-  background: #F5A623;
+  background: #C9A96E;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -238,7 +238,7 @@ const values = [
 .timeline-content {
   width: 45%;
   padding: 30px;
-  background: #f8f9fa;
+  background: #F7F9F4;
   border-radius: 12px;
 }
 
@@ -253,7 +253,7 @@ const values = [
 
 .timeline-content h3 {
   font-size: 1.3rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 0.5rem;
 }
 
@@ -264,12 +264,12 @@ const values = [
 
 .values {
   padding: 80px 0;
-  background: #f8f9fa;
+  background: #F7F9F4;
 }
 
 .values h2 {
   font-size: 2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -300,7 +300,7 @@ const values = [
 
 .value-card h3 {
   font-size: 1.2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 0.5rem;
 }
 
@@ -317,7 +317,7 @@ const values = [
 
 .cert-preview h2 {
   font-size: 2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 1rem;
 }
 
@@ -330,7 +330,7 @@ const values = [
 .view-cert-btn {
   display: inline-block;
   padding: 15px 40px;
-  background: #F5A623;
+  background: #C9A96E;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -339,7 +339,7 @@ const values = [
 }
 
 .view-cert-btn:hover {
-  background: #d8941f;
+  background: #B8945A;
 }
 
 /* Responsive */

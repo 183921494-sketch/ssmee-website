@@ -171,7 +171,7 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
 <style scoped>
 /* Hero */
 .page-hero {
-  background: linear-gradient(135deg, #1A3A5C, #0F2A4A);
+  background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
   padding: 120px 0 80px;
   text-align: center;
@@ -192,13 +192,13 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   padding: 80px 0;
 }
 .cert-section { background: white; }
-.hygiene-section { background: #F8FAFC; }
+.hygiene-section { background: #F7F9F4; }
 .download-section { background: white; }
-.factory-section { background: #F8FAFC; }
+.factory-section { background: #F7F9F4; }
 
 .section-heading {
   font-size: 2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   text-align: center;
   margin: 0 0 16px;
   font-weight: 700;
@@ -222,18 +222,18 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(26,58,92,0.08);
+  box-shadow: 0 4px 20px rgba(43,77,26,0.08);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cert-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(26,58,92,0.15);
+  box-shadow: 0 12px 40px rgba(43,77,26,0.15);
 }
 .cert-img-wrapper {
   position: relative;
   aspect-ratio: 3/4;
   overflow: hidden;
-  background: #f5f7fa;
+  background: #F7F9F4;
 }
 .cert-img-wrapper img {
   width: 100%;
@@ -248,7 +248,7 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
 .cert-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(26,58,92,0.6);
+  background: rgba(43,77,26,0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -264,7 +264,7 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   border-radius: 50%;
   background: white;
   border: none;
-  color: #1A3A5C;
+  color: #2B4D1A;
   cursor: pointer;
   transition: transform 0.3s;
   display: flex;
@@ -285,17 +285,17 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(26,58,92,0.08);
+  box-shadow: 0 4px 20px rgba(43,77,26,0.08);
   transition: all 0.4s;
 }
 .hygiene-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(26,58,92,0.12);
+  box-shadow: 0 12px 32px rgba(43,77,26,0.12);
 }
 .hygiene-img-wrapper {
   aspect-ratio: 3/4;
   overflow: hidden;
-  background: #f5f7fa;
+  background: #F7F9F4;
 }
 .hygiene-img-wrapper img {
   width: 100%;
@@ -309,7 +309,7 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
 }
 .hygiene-info h3 {
   font-size: 1rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin: 0 0 16px;
   font-weight: 600;
 }
@@ -321,26 +321,26 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
   gap: 28px;
 }
 .download-card {
-  background: #F8FAFC;
+  background: #F7F9F4;
   border-radius: 16px;
   padding: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(26,58,92,0.06);
+  box-shadow: 0 4px 16px rgba(43,77,26,0.06);
   transition: all 0.4s;
 }
 .download-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(26,58,92,0.12);
+  box-shadow: 0 12px 32px rgba(43,77,26,0.12);
 }
 .download-icon {
   margin-bottom: 20px;
 }
 .download-info h3 {
   font-size: 1.1rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin: 0 0 8px;
   font-weight: 600;
 }

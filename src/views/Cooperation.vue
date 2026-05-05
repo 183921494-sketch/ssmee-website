@@ -139,7 +139,7 @@ const processSteps = [
 }
 
 .hero {
-  background: linear-gradient(135deg, #1A3A5C 0%, #0D7D8A 100%);
+  background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
   padding: 80px 20px;
   text-align: center;
@@ -166,12 +166,12 @@ const processSteps = [
 }
 
 .advantages, .support {
-  background: #f8f9fa;
+  background: #F7F9F4;
 }
 
 h2 {
   font-size: 2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -202,7 +202,7 @@ h2 {
 
 .adv-card h3 {
   font-size: 1.2rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 0.5rem;
 }
 
@@ -219,7 +219,7 @@ h2 {
 }
 
 .model-card {
-  background: #f8f9fa;
+  background: #F7F9F4;
   padding: 40px 30px;
   border-radius: 12px;
   position: relative;
@@ -231,7 +231,7 @@ h2 {
   right: 20px;
   width: 40px;
   height: 40px;
-  background: #F5A623;
+  background: #C9A96E;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -243,7 +243,7 @@ h2 {
 
 .model-card h3 {
   font-size: 1.3rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 0.5rem;
 }
 
@@ -270,7 +270,7 @@ h2 {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #0D7D8A;
+  color: #4A7C3F;
   font-weight: bold;
 }
 
@@ -313,7 +313,7 @@ h2 {
   top: 60px;
   bottom: -20px;
   width: 2px;
-  background: #0D7D8A;
+  background: #4A7C3F;
 }
 
 .step-marker {
@@ -323,7 +323,7 @@ h2 {
 .step-num {
   width: 50px;
   height: 50px;
-  background: #F5A623;
+  background: #C9A96E;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -335,7 +335,7 @@ h2 {
 
 .step-content h3 {
   font-size: 1.3rem;
-  color: #1A3A5C;
+  color: #2B4D1A;
   margin-bottom: 0.5rem;
 }
 
@@ -345,7 +345,7 @@ h2 {
 }
 
 .cta {
-  background: linear-gradient(135deg, #1A3A5C 0%, #0D7D8A 100%);
+  background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
   text-align: center;
 }
@@ -376,12 +376,12 @@ h2 {
 }
 
 .cta-btn.primary {
-  background: #F5A623;
+  background: #C9A96E;
   color: white;
 }
 
 .cta-btn.primary:hover {
-  background: #d8941f;
+  background: #B8945A;
 }
 
 .cta-btn.secondary {
@@ -392,7 +392,7 @@ h2 {
 
 .cta-btn.secondary:hover {
   background: white;
-  color: #1A3A5C;
+  color: #2B4D1A;
 }
 
 /* Responsive */
