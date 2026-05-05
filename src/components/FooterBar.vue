@@ -45,7 +45,7 @@
 
       <div class="footer-bottom">
         <p>{{ t('footer.rights') }}</p>
-        <p>技术支持：贤乐科技 www.soonyet.cn</p>
+        <p>技术支持：贤乐科技</p>
       </div>
     </div>
   </footer>
