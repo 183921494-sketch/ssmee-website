@@ -428,6 +428,7 @@ const whyFeatures = [
   position: relative;
   z-index: 2;
   margin-top: -40px;
+  margin-bottom: -40px;
 }
 .strength-items {
   display: grid;
@@ -487,7 +488,10 @@ const whyFeatures = [
 /* === Products === */
 .products-preview {
   padding: 80px 0;
+  padding-top: 100px;
   background: white;
+  position: relative;
+  z-index: 1;
 }
 .product-grid {
   display: grid;
@@ -596,6 +600,7 @@ const whyFeatures = [
   background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   position: relative;
   overflow: hidden;
+  margin-top: -20px;
 }
 .why-us::before {
   content: '';
@@ -656,6 +661,7 @@ const whyFeatures = [
 .cta-section {
   padding: 80px 0;
   background: #F7F9F4;
+  margin-top: -20px;
 }
 .cta-box {
   text-align: center;
