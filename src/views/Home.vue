@@ -167,7 +167,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
@@ -182,6 +182,7 @@ const factoryImages = [
 const currentSlide = ref(0)
 const isLoaded = ref(false)
 let autoPlayTimer = null
+let observer = null
 
 const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % factoryImages.length
@@ -201,9 +202,26 @@ const scrollToProducts = () => {
 onMounted(() => {
   autoPlayTimer = setInterval(nextSlide, 5000)
   setTimeout(() => { isLoaded.value = true }, 100)
+
+  // IntersectionObserver 触发 fade-up 动画
+  nextTick(() => {
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible')
+          observer.unobserve(entry.target)
+        }
+      })
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' })
+
+    document.querySelectorAll('.fade-up:not(.visible)').forEach(el => {
+      observer.observe(el)
+    })
+  })
 })
 onUnmounted(() => {
   if (autoPlayTimer) clearInterval(autoPlayTimer)
+  if (observer) observer.disconnect()
 })
 
 const strengthItems = [
@@ -343,6 +361,10 @@ const whyFeatures = [
 .fade-up.delay-1 { transition-delay: 0.15s; }
 .fade-up.delay-2 { transition-delay: 0.3s; }
 .fade-up.delay-3 { transition-delay: 0.45s; }
+/* 安全回退：确保JS不执行时内容仍可见 */
+@supports not (intersection-observer: auto) {
+  .fade-up { opacity: 1; transform: none; }
+}
 
 /* Carousel Nav */
 .carousel-btn {
