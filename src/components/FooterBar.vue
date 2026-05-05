@@ -45,7 +45,7 @@
 
       <div class="footer-bottom">
         <p>{{ t('footer.rights') }}</p>
-        <p>技术支持：<a href="https://www.soonyet.cn" target="_blank" style="color:rgba(255,255,255,0.6);text-decoration:none;">贤乐科技 www.soonyet.cn</a></p>
+        <p>技术支持：贤乐科技 www.soonyet.cn</p>
       </div>
     </div>
   </footer>

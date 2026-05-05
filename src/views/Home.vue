@@ -34,6 +34,13 @@
         <div class="carousel-dots">
           <button v-for="(_, i) in factoryImages" :key="i" :class="{ active: currentSlide === i }" @click="goToSlide(i)" :aria-label="`Slide ${i+1}`"></button>
         </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" @click="scrollToProducts">
+          <span>{{ t('hero.secondary') }}</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
       </div>
     </section>
 
@@ -186,6 +193,11 @@ const goToSlide = (i) => {
   currentSlide.value = i
 }
 
+const scrollToProducts = () => {
+  const el = document.querySelector('.products-preview')
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
+
 onMounted(() => {
   autoPlayTimer = setInterval(nextSlide, 5000)
   setTimeout(() => { isLoaded.value = true }, 100)
@@ -210,9 +222,9 @@ const whyFeatures = [
 /* === Hero Carousel === */
 .hero-carousel {
   position: relative;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 900px;
+  height: 70vh;
+  min-height: 450px;
+  max-height: 650px;
   overflow: hidden;
 }
 .carousel-container {
@@ -238,7 +250,7 @@ const whyFeatures = [
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(27,53,9,0.55) 0%, rgba(43,77,26,0.40) 50%, rgba(27,53,9,0.50) 100%);
+  background: linear-gradient(135deg, rgba(27,53,9,0.35) 0%, rgba(43,77,26,0.25) 50%, rgba(27,53,9,0.30) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,6 +392,33 @@ const whyFeatures = [
 .carousel-dots button.active {
   background: #C9A96E;
   width: 48px;
+}
+.scroll-indicator {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 10;
+  animation: bounce 2s infinite;
+}
+.scroll-indicator:hover {
+  color: #C9A96E;
+  transform: translateX(-50%) translateY(-4px);
+}
+.scroll-indicator svg {
+  opacity: 0.9;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
 }
 
 /* === Strength Bar === */
