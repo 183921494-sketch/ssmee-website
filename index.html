@@ -54,8 +54,8 @@
   <meta name="360-site-verification" content="360-verify-code" />
   
   <!-- 结构化数据 -->
-  <link rel="stylesheet" type="application/ld+json" href="/organization.json" />
-  <link rel="stylesheet" type="application/ld+json" href="/website.json" />
+  <script type="application/ld+json" src="/organization.json"></script>
+  <script type="application/ld+json" src="/website.json"></script>
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://www.ssmee.com/" />
@@ -64,17 +64,25 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
   
-  <!-- Google Fonts -->
+  <!-- Google Fonts - 异步加载优化 -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Sans+RU:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+RU:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Sans+RU:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
   
   <!-- Preload关键资源 -->
   <link rel="preload" href="/images/ssmee-logo.png" as="image" />
-  
-  <!-- DNS预解析 -->
+
+  <!-- DNS预解析 + 预连接 -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- 安全头部（Vercel自动添加CSP等，此处补充meta级别安全） -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 </head>
 <body>
   <div id="app"></div>

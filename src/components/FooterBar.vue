@@ -5,13 +5,14 @@
         <!-- Brand -->
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="/images/ssmee-logo.png" alt="Ssmee" width="32" height="32" />
+            <img src="/images/ssmee-logo.png" alt="Ssmee" width="28" height="28" />
             <span>Ssmee</span>
           </div>
           <p class="footer-desc">{{ t('brand.tagline') }}</p>
-          <div class="social-links">
-            <a href="#" aria-label="WhatsApp">💬 WhatsApp</a>
-            <a href="#" aria-label="WeChat">💙 WeChat</a>
+          <div class="footer-contact-info">
+            <p>📞 +86 153-7773-1411</p>
+            <p>📧 183921494@qq.com</p>
+            <p>💬 WeChat: soonyetclub</p>
           </div>
         </div>
 
@@ -37,8 +38,8 @@
           <h4>{{ t('nav.cooperation') }}</h4>
           <ul>
             <li><router-link to="/cooperation">{{ t('coop.models.m1.title') }}</router-link></li>
-            <li><router-link to="/cooperation">{{ t('cooperation.models.0') }}</router-link></li>
-            <li><router-link to="/contact">{{ t('cooperation.contact') }}</router-link></li>
+            <li><router-link to="/cooperation">{{ t('coop.models.m2.title') }}</router-link></li>
+            <li><router-link to="/cooperation">{{ t('coop.models.m3.title') }}</router-link></li>
           </ul>
         </div>
       </div>
@@ -60,14 +61,14 @@ const { t } = useI18n()
 .footer {
   background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   color: white;
-  padding: 60px 0 0;
+  padding: 48px 0 0;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 48px;
-  padding-bottom: 48px;
+  gap: 36px;
+  padding-bottom: 36px;
 }
 
 .footer-logo {
@@ -90,19 +91,17 @@ const { t } = useI18n()
   margin: 0 0 20px;
 }
 
-.social-links {
+.footer-contact-info {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.social-links a {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.7);
-  transition: color 0.2s;
-}
-
-.social-links a:hover {
-  color: var(--color-gold);
+.footer-contact-info p {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.65);
+  margin: 0;
+  line-height: 1.5;
 }
 
 .footer-col h4 {
@@ -149,7 +148,7 @@ const { t } = useI18n()
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 }
 

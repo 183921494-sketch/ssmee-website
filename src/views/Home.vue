@@ -478,7 +478,7 @@ const whyFeatures = [
 /* === Section Header === */
 .section-header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 .section-badge {
   display: inline-block;
@@ -508,7 +508,7 @@ const whyFeatures = [
 
 /* === Products === */
 .products-preview {
-  padding: 80px 0;
+  padding: 48px 0 56px;
   background: white;
   position: relative;
   z-index: 1;
@@ -516,8 +516,8 @@ const whyFeatures = [
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 8px;
+  gap: 28px;
+  margin-top: 0;
 }
 .product-card {
   background: white;
@@ -534,19 +534,19 @@ const whyFeatures = [
 }
 .product-img-box {
   background: #F7F9F4;
-  padding: 32px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  aspect-ratio: 1/1;
-  max-height: 360px;
+  aspect-ratio: 4/3;
+  max-height: 280px;
 }
 .product-img-box img {
-  width: 100%;
-  max-width: 320px;
+  width: auto;
+  max-width: 240px;
+  max-height: 240px;
   height: auto;
-  aspect-ratio: 1/1;
   object-fit: contain;
   transition: transform 0.6s ease;
 }
@@ -570,32 +570,32 @@ const whyFeatures = [
   background: linear-gradient(135deg, #C9A96E 0%, #B8945A 100%);
 }
 .product-body {
-  padding: 28px;
+  padding: 20px 24px 24px;
 }
 .product-body h3 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   color: #2B4D1A;
-  margin: 0 0 8px;
+  margin: 0 0 4px;
   font-weight: 700;
 }
 .product-body .spec {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: #C9A96E;
   font-weight: 600;
-  margin: 0 0 14px;
+  margin: 0 0 10px;
 }
 .features {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 18px;
+  gap: 5px;
+  margin-bottom: 12px;
 }
 .feature-tag {
   background: rgba(43,77,26,0.06);
   color: #3D6B2E;
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 4px;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 500;
   border: 1px solid rgba(43,77,26,0.1);
 }
@@ -616,7 +616,7 @@ const whyFeatures = [
 
 /* === Why Us === */
 .why-us {
-  padding: 80px 0;
+  padding: 56px 0;
   background: linear-gradient(135deg, #2B4D1A 0%, #1B3509 100%);
   position: relative;
   overflow: hidden;
@@ -678,27 +678,27 @@ const whyFeatures = [
 
 /* === CTA === */
 .cta-section {
-  padding: 80px 0;
+  padding: 48px 0 56px;
   background: #F7F9F4;
 }
 .cta-box {
   text-align: center;
   background: white;
   border-radius: 20px;
-  padding: 60px 40px;
+  padding: 40px 32px;
   box-shadow: 0 4px 24px rgba(43,77,26,0.06);
   border: 1px solid #E8EDE3;
 }
 .cta-box h2 {
-  font-size: 2.2rem;
-  margin: 0 0 14px;
+  font-size: 1.8rem;
+  margin: 0 0 10px;
   font-weight: 700;
   color: #2B4D1A;
 }
 .cta-box p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #5A6B52;
-  margin: 0 0 32px;
+  margin: 0 0 24px;
 }
 .cta-btns {
   display: flex;
@@ -769,15 +769,15 @@ const whyFeatures = [
   .strength-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding: 16px; }
   .strength-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.08); }
   .strength-num { font-size: 1.8rem; }
-  .products-preview { padding: 60px 0; }
-  .why-us { padding: 60px 0; }
-  .cta-section { padding: 60px 0; }
-  .product-grid { grid-template-columns: 1fr; gap: 28px; }
-  .product-img-box { max-height: 300px; padding: 24px; }
-  .features-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
-  .feature-card { padding: 24px 16px; }
-  .cta-box { padding: 40px 20px; }
-  .cta-box h2 { font-size: 1.6rem; }
+  .products-preview { padding: 36px 0 44px; }
+  .why-us { padding: 44px 0; }
+  .cta-section { padding: 36px 0 44px; }
+  .product-grid { grid-template-columns: 1fr; gap: 20px; }
+  .product-img-box { max-height: 240px; padding: 16px; }
+  .features-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .feature-card { padding: 20px 12px; }
+  .cta-box { padding: 28px 16px; }
+  .cta-box h2 { font-size: 1.4rem; }
   .section-header h2 { font-size: 1.6rem; }
   .cta-btns { flex-direction: column; align-items: center; }
 }
