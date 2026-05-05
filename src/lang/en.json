@@ -2,7 +2,7 @@
   "brand": {
     "name": "Ssmee",
     "nameEn": "Ssmee",
-    "tagline": "Premium Tissue OEM/ODM Manufacturer"
+    "tagline": "Premium Tissue Manufacturer"
   },
   "nav": {
     "home": "Home",
@@ -14,7 +14,7 @@
   },
   "hero": {
     "badge": "PREMIUM TISSUE BRAND",
-    "title": "Premium Tissue OEM/ODM Manufacturer",
+    "title": "Premium Tissue Manufacturer",
     "subtitle": "Export to Russia · SE Asia · Global Markets",
     "cta": "Get Quote",
     "secondary": "View Products"
@@ -224,7 +224,7 @@
         ]
       },
       "m3": {
-        "title": "OEM/ODM",
+        "title": "Custom Brand",
         "desc": "Private label customization service",
         "features": [
           "Brand Customization",
@@ -326,7 +326,7 @@
           "desc": "Exported to Russia, SE Asia and 15+ countries worldwide"
         },
         {
-          "title": "OEM Custom",
+          "title": "Custom Brand",
           "desc": "Brand customization supported, one-stop service from design to production"
         },
         {

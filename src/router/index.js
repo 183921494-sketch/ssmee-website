@@ -5,17 +5,17 @@ const routes = [
   {
     path: '/',
     component: () => import('../views/Home.vue'),
-    meta: { title: '高端纸巾 OEM/ODM 制造商 - 时时美 Ssmee' }
+    meta: { title: '高端纸巾制造商 - 时时美 Ssmee' }
   },
   {
     path: '/en',
     component: () => import('../views/Home.vue'),
-    meta: { lang: 'en', title: 'Premium Tissue OEM/ODM Manufacturer - Ssmee' }
+    meta: { lang: 'en', title: 'Premium Tissue Manufacturer - Ssmee' }
   },
   {
     path: '/ru',
     component: () => import('../views/Home.vue'),
-    meta: { lang: 'ru', title: 'Производитель премиум салфеток OEM/ODM - Ssmee' }
+    meta: { lang: 'ru', title: 'Производитель премиум бумажной продукции - Ssmee' }
   },
   {
     path: '/products',

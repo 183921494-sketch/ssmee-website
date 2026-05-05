@@ -238,7 +238,7 @@ const whyFeatures = [
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(27,53,9,0.82) 0%, rgba(43,77,26,0.72) 50%, rgba(27,53,9,0.78) 100%);
+  background: linear-gradient(135deg, rgba(27,53,9,0.55) 0%, rgba(43,77,26,0.40) 50%, rgba(27,53,9,0.50) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,6 +260,8 @@ const whyFeatures = [
   letter-spacing: 2px;
   margin-bottom: 28px;
   text-transform: uppercase;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(4px);
 }
 .slide-overlay h1 {
   font-size: 3.4rem;
@@ -268,15 +270,17 @@ const whyFeatures = [
   margin: 0 0 24px;
   line-height: 1.2;
   font-family: 'Noto Sans SC', 'Inter', sans-serif;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
 }
 .slide-overlay .subtitle {
   font-size: 1.25rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.92);
   margin: 0 0 44px;
   line-height: 1.7;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
 }
 .hero-btns {
   display: flex;

@@ -36,7 +36,7 @@
         <div class="footer-col">
           <h4>{{ t('nav.cooperation') }}</h4>
           <ul>
-            <li><router-link to="/cooperation">OEM/ODM</router-link></li>
+            <li><router-link to="/cooperation">{{ t('coop.models.m1.title') }}</router-link></li>
             <li><router-link to="/cooperation">{{ t('cooperation.models.0') }}</router-link></li>
             <li><router-link to="/contact">{{ t('cooperation.contact') }}</router-link></li>
           </ul>
