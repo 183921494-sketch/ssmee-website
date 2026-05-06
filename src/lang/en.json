@@ -208,29 +208,23 @@
       "m1": {
         "title": "Regional Agency",
         "desc": "Exclusive regional rights with territory protection",
-        "features": [
-          "Exclusive Rights",
-          "Territory Protection",
-          "Marketing Support Fund"
-        ]
+        "f1": "Exclusive Rights",
+        "f2": "Territory Protection",
+        "f3": "Marketing Support Fund"
       },
       "m2": {
         "title": "Wholesale Distribution",
         "desc": "Volume discount for channel partners",
-        "features": [
-          "Tiered Pricing",
-          "Credit Terms",
-          "Promo Materials"
-        ]
+        "f1": "Tiered Pricing",
+        "f2": "Credit Terms",
+        "f3": "Promo Materials"
       },
       "m3": {
         "title": "Custom Brand",
         "desc": "Private label customization service",
-        "features": [
-          "Brand Customization",
-          "Package Design",
-          "Small MOQ Trial"
-        ]
+        "f1": "Brand Customization",
+        "f2": "Package Design",
+        "f3": "Small MOQ Trial"
       }
     },
     "support": {

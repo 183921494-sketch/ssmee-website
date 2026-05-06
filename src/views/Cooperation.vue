@@ -102,17 +102,17 @@ const models = [
   {
     titleKey: 'coop.models.m1.title',
     descKey: 'coop.models.m1.desc',
-    features: ['coop.models.m1.features.0', 'coop.models.m1.features.1', 'coop.models.m1.features.2']
+    features: ['coop.models.m1.f1', 'coop.models.m1.f2', 'coop.models.m1.f3']
   },
   {
     titleKey: 'coop.models.m2.title',
     descKey: 'coop.models.m2.desc',
-    features: ['coop.models.m2.features.0', 'coop.models.m2.features.1', 'coop.models.m2.features.2']
+    features: ['coop.models.m2.f1', 'coop.models.m2.f2', 'coop.models.m2.f3']
   },
   {
     titleKey: 'coop.models.m3.title',
     descKey: 'coop.models.m3.desc',
-    features: ['coop.models.m3.features.0', 'coop.models.m3.features.1', 'coop.models.m3.features.2']
+    features: ['coop.models.m3.f1', 'coop.models.m3.f2', 'coop.models.m3.f3']
   }
 ]
 

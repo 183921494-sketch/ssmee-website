@@ -9,12 +9,12 @@
 
       <!-- Desktop Nav -->
       <nav class="nav-links desktop-only">
-        <router-link :to="lp">{{ t('nav.home') }}</router-link>
-        <router-link :to="lp + '/products'">{{ t('nav.products') }}</router-link>
-        <router-link :to="lp + '/about'">{{ t('nav.about') }}</router-link>
-        <router-link :to="lp + '/certification'">{{ t('nav.certification') }}</router-link>
-        <router-link :to="lp + '/contact'">{{ t('nav.contact') }}</router-link>
-        <router-link :to="lp + '/cooperation'" class="nav-cta">{{ t('nav.cooperation') }}</router-link>
+        <router-link to="/">{{ t('nav.home') }}</router-link>
+        <router-link to="/products">{{ t('nav.products') }}</router-link>
+        <router-link to="/about">{{ t('nav.about') }}</router-link>
+        <router-link to="/certification">{{ t('nav.certification') }}</router-link>
+        <router-link to="/contact">{{ t('nav.contact') }}</router-link>
+        <router-link to="/cooperation" class="nav-cta">{{ t('nav.cooperation') }}</router-link>
       </nav>
 
       <!-- Language Switcher -->
@@ -36,12 +36,12 @@
     <!-- Mobile Menu -->
     <transition name="slide-down">
       <div v-if="menuOpen" class="mobile-menu">
-        <router-link :to="lp" @click="menuOpen = false">{{ t('nav.home') }}</router-link>
-        <router-link :to="lp + '/products'" @click="menuOpen = false">{{ t('nav.products') }}</router-link>
-        <router-link :to="lp + '/about'" @click="menuOpen = false">{{ t('nav.about') }}</router-link>
-        <router-link :to="lp + '/certification'" @click="menuOpen = false">{{ t('nav.certification') }}</router-link>
-        <router-link :to="lp + '/contact'" @click="menuOpen = false">{{ t('nav.contact') }}</router-link>
-        <router-link :to="lp + '/cooperation'" @click="menuOpen = false">{{ t('nav.cooperation') }}</router-link>
+        <router-link to="/" @click="menuOpen = false">{{ t('nav.home') }}</router-link>
+        <router-link to="/products" @click="menuOpen = false">{{ t('nav.products') }}</router-link>
+        <router-link to="/about" @click="menuOpen = false">{{ t('nav.about') }}</router-link>
+        <router-link to="/certification" @click="menuOpen = false">{{ t('nav.certification') }}</router-link>
+        <router-link to="/contact" @click="menuOpen = false">{{ t('nav.contact') }}</router-link>
+        <router-link to="/cooperation" @click="menuOpen = false">{{ t('nav.cooperation') }}</router-link>
         <div class="mobile-lang">
           <button v-for="lang in ['zh','en','ru']" :key="lang" :class="{ active: locale === lang }" @click="switchLang(lang)">{{ lang.toUpperCase() }}</button>
         </div>
@@ -51,7 +51,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
 
@@ -59,22 +59,13 @@ const { t, locale } = useI18n()
 const router = useRouter()
 const route = useRoute()
 
-// 动态语言前缀
-const lp = computed(() => {
-  const l = locale.value
-  return l === 'zh' ? '' : '/' + l
-})
 const isScrolled = ref(false)
 const menuOpen = ref(false)
 
 function switchLang(lang) {
   locale.value = lang
-  const prefixMap = { zh: '', en: '/en', ru: '/ru' }
-  const current = route.path
-  // 移除当前语言前缀
-  let base = current.replace(/^\/(en|ru)/, '') || '/'
- const target = (prefixMap[lang] || '') + base
-  router.push(target)
+  const pathMap = { zh: '/', en: '/en', ru: '/ru' }
+  router.push(pathMap[lang])
   menuOpen.value = false
 }
 

@@ -177,15 +177,15 @@ const nextImage = () => { lightboxIndex.value = (lightboxIndex.value + 1) % cert
 }
 .cert-img-wrapper {
   position: relative;
-  aspect-ratio: 3/4;
+  aspect-ratio: 10/7;
   overflow: hidden;
   background: #F7F9F4;
+  border: 1px solid #E5E7EB;
 }
 .cert-img-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 16px;
   transition: transform 0.4s;
 }
 .cert-card:hover .cert-img-wrapper img {
