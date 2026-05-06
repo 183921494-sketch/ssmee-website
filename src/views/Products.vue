@@ -9,31 +9,29 @@
     <div class="container" style="padding: 60px 20px;">
       <div class="product-list">
         <!-- 抽纸 -->
-        <div class="product-row">
+        <router-link to="/products/tissue" class="product-row">
           <div class="product-img">
-            <img src="/images/tissue-pack.jpg" :alt="t('products.tissue.name')" />
+            <img src="/images/tissue-pack.jpg" loading="lazy" decoding="async" :alt="t('products.tissue.name')" />
           </div>
           <div class="product-detail">
             <span class="tag hot">{{ t('home.hot') }}</span>
             <h2>{{ t('products.tissue.name') }}</h2>
             <p class="spec">{{ t('products.tissue.spec') }}</p>
             <p class="desc">{{ t('products.tissue.desc') }}</p>
-            <router-link to="/products/tissue" class="btn btn-primary">{{ t('home.viewProduct') }}</router-link>
           </div>
-        </div>
+        </router-link>
         <!-- 底部挂抽 -->
-        <div class="product-row reverse">
+        <router-link to="/products/bottom-drawer" class="product-row reverse">
           <div class="product-img">
-            <img src="/images/bottom-drawer.jpg" :alt="t('products.bottomDrawer.name')" />
+            <img src="/images/bottom-drawer.jpg" loading="lazy" decoding="async" :alt="t('products.bottomDrawer.name')" />
           </div>
           <div class="product-detail">
             <span class="tag popular">{{ t('home.popular') }}</span>
             <h2>{{ t('products.bottomDrawer.name') }}</h2>
             <p class="spec">{{ t('products.bottomDrawer.spec') }}</p>
             <p class="desc">{{ t('products.bottomDrawer.desc') }}</p>
-            <router-link to="/products/bottom-drawer" class="btn btn-primary">{{ t('home.viewProduct') }}</router-link>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -65,6 +63,13 @@ const { t } = useI18n()
   overflow: hidden;
   background: white;
   box-shadow: 0 4px 16px rgba(43,77,26,0.06);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product-row:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(43,77,26,0.15);
 }
 .product-row.reverse { direction: rtl; }
 .product-row.reverse > * { direction: ltr; }

@@ -5,7 +5,7 @@
       <div class="carousel-container">
         <div class="carousel-track" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
           <div class="carousel-slide" v-for="(img, i) in factoryImages" :key="i">
-            <img :src="img" :alt="`Factory ${i+1}`" />
+            <img :src="img" :alt="`Factory ${i+1}`" loading="eager" fetchpriority="high" decoding="async" />
             <div class="slide-overlay">
               <div class="hero-content">
                 <span class="hero-badge fade-up" :class="{ visible: isLoaded }">{{ t('hero.badge') || '高端生活用纸品牌' }}</span>
@@ -32,15 +32,8 @@
         </button>
         <!-- Dots -->
         <div class="carousel-dots">
-          <button v-for="(_, i) in factoryImages" :key="i" :class="{ active: currentSlide === i }" @click="goToSlide(i)" :aria-label="`Slide ${i+1}`"></button>
         </div>
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator" @click="scrollToProducts">
-          <span>{{ t('hero.secondary') }}</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 5v14M5 12l7 7 7-7"/>
-          </svg>
-        </div>
+        <!-- Dots -->
       </div>
     </section>
 
@@ -173,10 +166,7 @@ const { t } = useI18n()
 
 const factoryImages = [
   '/images/factory-1.jpg',
-  '/images/factory-2.jpg',
-  '/images/factory-3.jpg',
-  '/images/factory-4.jpg',
-  '/images/factory-5.jpg'
+  '/images/factory-2.jpg'
 ]
 
 const currentSlide = ref(0)

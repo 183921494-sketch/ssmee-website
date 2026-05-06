@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "nodemailer": "^8.0.7",
     "vue": "^3.4.0",
-    "vue-router": "^4.3.0",
-    "vue-i18n": "^9.14.0"
+    "vue-i18n": "^9.14.0",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",

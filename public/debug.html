@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ssmee Debug</title>
+</head>
+<body>
+  <h1>Ssmee Website Debug</h1>
+  <div id="results"></div>
+  <script type="module">
+    const results = [];
+    
+    // 测试所有资源
+    const tests = [
+      '/assets/vendor-CxTigC4J.js',
+      '/assets/index-NHIOF5r4.js',
+      '/assets/Home-NyUFBZEi.js',
+      '/assets/About-DPr6LYXT.js',
+      '/assets/Products-Bea9QPW3.js',
+      '/assets/index-BqV4FwBg.css'
+    ];
+    
+    for (const url of tests) {
+      try {
+        const res = await fetch(url);
+        results.push(`✅ ${url}: ${res.status}`);
+      } catch (e) {
+        results.push(`❌ ${url}: ${e.message}`);
+      }
+    }
+    
+    document.getElementById('results').innerHTML = results.join('<br>');
+  </script>
+</body>
+</html>

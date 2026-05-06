@@ -4,15 +4,9 @@
       <div class="footer-grid">
         <!-- Brand -->
         <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="/images/ssmee-logo.png" alt="Ssmee" width="28" height="28" />
-            <span>Ssmee</span>
-          </div>
           <p class="footer-desc">{{ t('brand.tagline') }}</p>
           <div class="footer-contact-info">
             <p>📞 +86 153-7773-1411</p>
-            <p>📧 183921494@qq.com</p>
-            <p>💬 WeChat: soonyetclub</p>
           </div>
         </div>
 
@@ -71,18 +65,7 @@ const { t } = useI18n()
   padding-bottom: 36px;
 }
 
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
-}
 
-.footer-logo span {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
 
 .footer-desc {
   font-size: 0.9rem;

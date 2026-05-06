@@ -28,7 +28,7 @@
               <span class="info-icon">👤</span>
               <div>
                 <h3>{{ $t('contact.info.manager.label') || '负责人' }}</h3>
-                <p>张经理</p>
+                <p>张先生</p>
               </div>
             </div>
             
@@ -133,15 +133,7 @@
       </div>
     </section>
 
-    <!-- Map -->
-    <section class="map-section">
-      <div class="container">
-        <h2>{{ $t('contact.map.title') }}</h2>
-        <div class="map-placeholder">
-          <p>{{ $t('contact.map.placeholder') }}</p>
-        </div>
-      </div>
-    </section>
+
   </div>
 </template>
 
@@ -166,13 +158,27 @@ const submitting = ref(false)
 
 const submitForm = async () => {
   submitting.value = true
-  // TODO: Send to Supabase or email endpoint
-  setTimeout(() => {
-    alert(t('contact.form.success'))
+  
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form.value)
+    })
+    
+    if (response.ok) {
+      alert(t('contact.form.success'))
+      // Reset form
+      Object.keys(form.value).forEach(key => form.value[key] = '')
+    } else {
+      alert('发送失败，请电话联系')
+    }
+  } catch (error) {
+    console.error('Form submit error:', error)
+    alert('发送失败，请电话联系')
+  } finally {
     submitting.value = false
-    // Reset form
-    Object.keys(form.value).forEach(key => form.value[key] = '')
-  }, 1500)
+  }
 }
 </script>
 
@@ -320,18 +326,34 @@ textarea {
   margin-bottom: 30px;
 }
 
-.map-placeholder {
-  height: 300px;
-  background: #ddd;
-  border-radius: 12px;
+.map-iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  border-radius: 16px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .map-iframe {
+    height: 320px;
+    border-radius: 12px;
+  }
+}
+
+.map-address-bar {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: #4A7C3F;
+  font-size: 0.95rem;
 }
 
-.map-placeholder p {
-  color: #666;
-  font-size: 1.1rem;
+.map-address-bar svg {
+  color: #C9A96E;
+  flex-shrink: 0;
 }
 
 /* Responsive */

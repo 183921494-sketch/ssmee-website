@@ -8,15 +8,15 @@
       </div>
     </section>
 
-    <!-- Food Safety License -->
+    <!-- Hygiene License -->
     <section class="cert-section">
       <div class="container">
-        <h2 class="section-heading">{{ t('cert.foodSafety.title') }}</h2>
-        <p class="section-desc">{{ t('cert.foodSafety.desc') }}</p>
+        <h2 class="section-heading">{{ t('cert.hygiene.title') || '卫生许可证' }}</h2>
+        <p class="section-desc">{{ t('cert.hygiene.desc') || '权威认证，品质保障' }}</p>
         <div class="cert-grid">
           <div class="cert-card" v-for="(img, i) in certImages" :key="i">
             <div class="cert-img-wrapper">
-              <img :src="img" :alt="`${t('cert.foodSafety.title')} ${i+1}`" />
+              <img :src="img" :alt="`卫生许可证 ${i+1}`" />
               <div class="cert-overlay">
                 <button class="zoom-btn" @click="openLightbox(i)">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -32,31 +32,6 @@
       </div>
     </section>
 
-    <!-- Hygiene License -->
-    <section class="hygiene-section">
-      <div class="container">
-        <h2 class="section-heading">{{ t('cert.hygiene.title') }}</h2>
-        <p class="section-desc">{{ t('cert.hygiene.desc') }}</p>
-        <div class="hygiene-grid">
-          <div class="hygiene-card" v-for="(item, i) in hygieneItems" :key="i">
-            <div class="hygiene-img-wrapper">
-              <img :src="item.img" :alt="item.name" />
-            </div>
-            <div class="hygiene-info">
-              <h3>{{ item.name }}</h3>
-              <a :href="item.img" class="download-btn" download>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-                  <polyline points="7,10 12,15 17,10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                {{ t('cert.reports.download') }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Test Reports Download -->
     <section class="download-section">
@@ -86,18 +61,7 @@
       </div>
     </section>
 
-    <!-- Factory Photos -->
-    <section class="factory-section">
-      <div class="container">
-        <h2 class="section-heading">{{ t('cert.factory.title') }}</h2>
-        <p class="section-desc">{{ t('cert.factory.desc') }}</p>
-        <div class="factory-grid">
-          <div class="factory-card" v-for="(img, i) in factoryImages" :key="i">
-            <img :src="img" :alt="`Factory ${i+1}`" />
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Lightbox -->
     <div class="lightbox" v-if="lightboxOpen" @click="closeLightbox">
@@ -128,28 +92,10 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const certImages = [
-  '/images/certs/资质1.png',
-  '/images/certs/资质2.png',
-  '/images/certs/资质3.png',
-  '/images/certs/资质4.png',
-  '/images/certs/资质5.png',
-  '/images/certs/资质6.png'
+  '/images/卫生许可证中文版.jpg',
+  '/images/卫生许可证英文版.jpg',
+  '/images/卫生许可证俄文版.jpg'
 ]
-
-const hygieneItems = [
-  { name: '卫生许可证（中文）', img: '/images/hygiene-cn.jpg' },
-  { name: 'Hygiene License (English)', img: '/images/hygiene-en.jpg' },
-  { name: 'Гигиенический сертификат (Русский)', img: '/images/hygiene-ru.jpg' }
-]
-
-const factoryImages = [
-  '/images/factory-1.jpg',
-  '/images/factory-2.jpg',
-  '/images/factory-3.jpg',
-  '/images/factory-4.jpg',
-  '/images/factory-5.jpg'
-]
-
 const reports = [
   { name: '检测报告-中文.pdf', size: '708 KB', file: '/files/检测报告-中文.pdf' },
   { name: '检测报告-英文.pdf', size: '810 KB', file: '/files/检测报告-英文.pdf' },

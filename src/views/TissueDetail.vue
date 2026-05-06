@@ -23,7 +23,7 @@
             <img
               v-for="(src, i) in thumbs"
               :key="i"
-              :src="src"
+              :src="src" loading="lazy" decoding="async"
               :class="{ active: activeImg === src }"
               @click="activeImg = src"
             />

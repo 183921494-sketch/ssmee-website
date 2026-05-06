@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ssmee JS诊断</title>
+  <style>
+    body { font-family: monospace; padding: 20px; background: #f5f5f5; }
+    .ok { color: green; }
+    .err { color: red; }
+    .warn { color: orange; }
+    pre { background: white; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    h2 { border-bottom: 2px solid #333; padding-bottom: 5px; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Ssmee网站JS诊断</h1>
+  <div id="log"></div>
+  
+  <script type="module">
+    const log = document.getElementById('log');
+    const results = [];
+    
+    function add(msg, type = '') {
+      results.push(`<div class="${type}">${msg}</div>`);
+      log.innerHTML = results.join('');
+    }
+    
+    add('开始诊断...', 'warn');
+    
+    // 1. 检查资源加载
+    add('<h2>1. 资源加载测试</h2>');
+    
+    const resources = [
+      '/assets/vendor-CxTigC4J.js',
+      '/assets/index-NHIOF5r4.js',
+      '/assets/Home-NyUFBZEi.js',
+      '/assets/index-BqV4FwBg.css'
+    ];
+    
+    for (const r of resources) {
+      try {
+        const res = await fetch(r);
+        add(`✅ ${r}: ${res.status} (${Math.round(res.headers.get('content-length')/1024)}KB)`, res.ok ? 'ok' : 'err');
+      } catch (e) {
+        add(`❌ ${r}: ${e.message}`, 'err');
+      }
+    }
+    
+    // 2. 检查Vue加载
+    add('<h2>2. Vue模块测试</h2>');
+    
+    try {
+      const vue = await import('/assets/vendor-CxTigC4J.js');
+      add(`✅ Vue模块已加载`, 'ok');
+      add(`- createApp存在: ${typeof vue.createApp !== 'undefined'}`, vue.createApp ? 'ok' : 'err');
+    } catch (e) {
+      add(`❌ Vue加载失败: ${e.message}`, 'err');
+    }
+    
+    // 3. 检查index.js
+    add('<h2>3. 主入口测试</h2>');
+    
+    try {
+      const index = await import('/assets/index-NHIOF5r4.js');
+      add(`✅ index.js已加载`, 'ok');
+    } catch (e) {
+      add(`❌ index.js加载失败: ${e.message}`, 'err');
+      add(`<pre>${e.stack}</pre>`, 'err');
+    }
+    
+    // 4. 检查DOM
+    add('<h2>4. DOM测试</h2>');
+    add(`#app元素: ${document.querySelector('#app') ? '存在' : '不存在'}`, document.querySelector('#app') ? 'ok' : 'err');
+    
+    // 5. 检查Vue实例
+    add('<h2>5. Vue实例测试</h2>');
+    setTimeout(() => {
+      const app = document.querySelector('#app');
+      if (app && app.__vue_app__) {
+        add(`✅ Vue已挂载`, 'ok');
+      } else if (app && app.innerHTML.length > 0) {
+        add(`✅ #app有内容 (${app.innerHTML.length}字符)`, 'ok');
+        add(`<pre>${app.innerHTML.substring(0, 500)}...</pre>`);
+      } else {
+        add(`⚠️ #app为空，Vue未挂载`, 'warn');
+      }
+    }, 2000);
+    
+    add('<h2>诊断完成</h2>');
+  </script>
+</body>
+</html>

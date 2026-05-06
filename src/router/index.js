@@ -1,57 +1,59 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-// 路由配置
-const routes = [
+// 所有路由（无前缀版本，用于zh默认）
+const makeRoutes = (prefix = '') => [
   {
-    path: '/',
+    path: prefix === '' ? '/' : `/${prefix}`,
     component: () => import('../views/Home.vue'),
-    meta: { title: '高端纸巾制造商 - 时时美 Ssmee' }
+    meta: { lang: prefix || 'zh', title: prefix === 'en' ? 'Premium Tissue Manufacturer - Ssmee' : prefix === 'ru' ? 'Производитель премиум бумажной продукции - Ssmee' : '高端纸巾制造商 - 时时美 Ssmee' }
   },
   {
-    path: '/en',
-    component: () => import('../views/Home.vue'),
-    meta: { lang: 'en', title: 'Premium Tissue Manufacturer - Ssmee' }
-  },
-  {
-    path: '/ru',
-    component: () => import('../views/Home.vue'),
-    meta: { lang: 'ru', title: 'Производитель премиум бумажной продукции - Ssmee' }
-  },
-  {
-    path: '/products',
+    path: `${prefix ? '/' + prefix : ''}/products`,
     component: () => import('../views/Products.vue'),
-    meta: { title: '产品中心 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '产品中心 - 时时美 Ssmee' }
   },
   {
-    path: '/products/tissue',
+    path: `${prefix ? '/' + prefix : ''}/products/tissue`,
     component: () => import('../views/TissueDetail.vue'),
-    meta: { title: '抽纸系列 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '抽纸系列 - 时时美 Ssmee' }
   },
   {
-    path: '/products/bottom-drawer',
+    path: `${prefix ? '/' + prefix : ''}/products/bottom-drawer`,
     component: () => import('../views/BottomDrawerDetail.vue'),
-    meta: { title: '底部挂抽系列 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '底部挂抽系列 - 时时美 Ssmee' }
   },
   {
-    path: '/about',
+    path: `${prefix ? '/' + prefix : ''}/about`,
     component: () => import('../views/About.vue'),
-    meta: { title: '关于我们 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '关于我们 - 时时美 Ssmee' }
   },
   {
-    path: '/certification',
+    path: `${prefix ? '/' + prefix : ''}/certification`,
     component: () => import('../views/Certification.vue'),
-    meta: { title: '资质证书 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '资质证书 - 时时美 Ssmee' }
   },
   {
-    path: '/contact',
+    path: `${prefix ? '/' + prefix : ''}/contact`,
     component: () => import('../views/Contact.vue'),
-    meta: { title: '联系我们 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '联系我们 - 时时美 Ssmee' }
   },
   {
-    path: '/cooperation',
+    path: `${prefix ? '/' + prefix : ''}/cooperation`,
     component: () => import('../views/Cooperation.vue'),
-    meta: { title: '招商加盟 - 时时美' }
+    meta: { lang: prefix || 'zh', title: '招商加盟 - 时时美 Ssmee' }
   },
+]
+
+// 合并所有语言路由
+const routes = [
+  ...makeRoutes(''),
+  ...makeRoutes('en'),
+  ...makeRoutes('ru'),
+  // 404 fallback
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
+  }
 ]
 
 const router = createRouter({
@@ -63,10 +65,12 @@ const router = createRouter({
   }
 })
 
-// 动态标题
+// 动态标题 + 动态meta
 router.afterEach((to) => {
-  const baseTitle = 'Ssmee 时时美'
-  document.title = to.meta.title || baseTitle
+  document.title = to.meta.title || 'Ssmee 时时美'
+  // 更新html lang属性
+  const lang = to.meta.lang || 'zh'
+  document.documentElement.lang = lang === 'en' ? 'en' : lang === 'ru' ? 'ru' : 'zh-CN'
 })
 
 export default router
